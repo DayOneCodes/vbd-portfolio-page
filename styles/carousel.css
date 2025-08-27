@@ -1,0 +1,79 @@
+.hero>div{
+  border: 2px solid #333;
+}
+
+.hero>div:nth-child(1){
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.hero>div:nth-child(1)>div{
+  border: solid 2px #333;
+}
+
+/* ************************ */
+
+.hero>div:nth-child(1)>div:nth-child(1){
+ 
+}
+
+.hero>div:nth-child(1)>div:nth-child(1)>div:nth-child(1){
+  height: 400px;
+  width: 100%;
+  background-color: red;
+}
+
+.hero>div:nth-child(1)>div:nth-child(1)>div:nth-child(2){
+  height: 250px;
+  width: 100%;
+  background-color: blue;
+  position: relative;
+}
+
+.hero>div:nth-child(1)>div:nth-child(1)>div:nth-child(3){
+  height: 250px;
+  width: 100%;
+  background-color: yellow;
+}
+
+.hero>div:nth-child(1)>div:nth-child(1)>div:nth-child(4){
+  height: 400px;
+  width: 100%;
+  background-color: pink;
+}
+
+.hero>div:nth-child(1)>div:nth-child(1)>div:nth-child(5){
+  height: 250px;
+  width: 100%;
+  background-color: purple;
+}
+
+/* ****************************** */
+
+.hero>div:nth-child(1)>div:nth-child(2)>div:nth-child(1){
+  height: 250px;
+  width: 100%;
+  background-color: purple;
+}
+
+.hero>div:nth-child(1)>div:nth-child(2)>div:nth-child(2){
+  height: 250px;
+  width: 100%;
+  background-color: yellow;
+}
+
+.hero>div:nth-child(1)>div:nth-child(2)>div:nth-child(3){
+  height: 400px;
+  width: 100%;
+  background-color: red;
+}
+
+.hero>div:nth-child(1)>div:nth-child(2)>div:nth-child(4){
+  height: 250px;
+  width: 100%;
+  background-color: blue;
+}
+
+
+
