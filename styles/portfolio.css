@@ -99,8 +99,7 @@ hr{
 
 /* UTILITIES */
 
-.flex-column-10pxgap{
+.flex-column{
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
