@@ -7,6 +7,7 @@ const listItems = document.querySelectorAll('.js-unordered-list li');
   const personalPhotosCategory = listItems[2];
   const retroCategory = listItems[3];
 const headerElement = document.querySelector('header');
+const switchTo = new carousel.SwitchCarouselTo;
 
 
 //Default states
@@ -34,8 +35,18 @@ listItems.forEach((item)=>{
 //Unselect other navigation list items
   useFunction.unselectOtherItems(listItems, item);
 
+  
+    if (item.textContent === 'JOBS'){
+      switchTo.jobsCategory();
+    }
+  
+
   });
 });
+
+
+
+
 
 
 
