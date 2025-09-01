@@ -1,10 +1,15 @@
 import * as carousel from "./carousel.js";
+import * as useFunction from "./functions.js"
 
 const listItems = document.querySelectorAll('.js-unordered-list li');
+  const partiesCategory = listItems[0];
+  const jobsCategory = listItems[1];
+  const personalPhotosCategory = listItems[2];
+  const retroCategory = listItems[3];
 const headerElement = document.querySelector('header');
 
+
 //Default states
-const partiesCategory = listItems[0];
 partiesCategory.classList.add('text-bold-purple')
 
 
@@ -24,10 +29,10 @@ listItems.forEach((item)=>{
   item.addEventListener('click', () => {
 
 //Toggle the bold text on click to indicate selected list item
-  item.classList.toggle('text-bold-purple')
+  item.classList.toggle('text-bold-purple');
 
 //Unselect other navigation list items
-  unselectOtherItems (listItems, item)
+  useFunction.unselectOtherItems(listItems, item);
 
   });
 });
@@ -36,18 +41,6 @@ listItems.forEach((item)=>{
 
 
 
-//FUNCTIONS AREA
-
-//Handle unselecting other list items
-function unselectOtherItems (fullList, currentSelectedItem) {
-  fullList.forEach((listItem) => {
-    if (listItem.innerHTML !== currentSelectedItem.innerHTML) {
-      listItem.classList.remove('text-bold-purple')
-    };
-  });
-};
-
-//Handle showcasing selected photos
 
 
 

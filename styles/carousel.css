@@ -31,40 +31,6 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
-/* Testing styles */
+/* *********SWITCH HANDLERS*********** */
 
-.border-solid{
-  border: solid 2px #333;
-}
-
-.bg-blue{
-  background-color: blue;
-}
-
-.bg-yellow{
-  background-color: yellow;
-}
-
-.bg-red{
-  background-color: red;
-}
-
-.bg-brown{
-  background-color: brown;
-}
-
-.bg-chocolate{
-  background-color: chocolate;
-}
-
-.bg-gold{
-  background-color: goldenrod;
-}
-
-.bg-purple{
-  background-color: purple;
-}
-
-.bg-green{
-  background-color: green;
-}
+/* Jobs Category styles */
