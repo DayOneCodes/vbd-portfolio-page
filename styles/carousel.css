@@ -2,98 +2,17 @@
   border: 2px solid #333;
 }
 
-.hero>div:nth-child(1){
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
 .hero>div:nth-child(1)>div{
   border: solid 2px #333;
 }
 
-/* ************************ */
-
-.hero>div:nth-child(1)>div:nth-child(1){
- 
-}
-
-.hero>div:nth-child(1)>div:nth-child(1)>div:nth-child(1){
-  background-color: red;
-}
-
-.hero>div:nth-child(1)>div:nth-child(1)>div:nth-child(2){
-  background-color: blue;
-}
-
-.hero>div:nth-child(1)>div:nth-child(1)>div:nth-child(3){
-  background-color: yellow;
-}
-
-.hero>div:nth-child(1)>div:nth-child(1)>div:nth-child(4){
-  background-color: pink;
-}
-
-/* ****************************** */
-
-.hero>div:nth-child(1)>div:nth-child(2)>div:nth-child(1){
-  background-color: purple;
-}
-
-.hero>div:nth-child(1)>div:nth-child(2)>div:nth-child(2){
-  background-color: yellow;
-}
-
-.hero>div:nth-child(1)>div:nth-child(2)>div:nth-child(3){
-  background-color: red;
-}
-
-.hero>div:nth-child(1)>div:nth-child(2)>div:nth-child(4){
-  background-color: blue;
-}
-
 /* *******************Second column******************** */
-
-.hero>div:nth-child(2){
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
 
 .hero>div:nth-child(2)>div{
   border: solid 2px #333;
 }
 
-/* ********************************************** */
 
-.hero>div:nth-child(2)>div:nth-child(1)>div:nth-child(1){
-  background-color: blue;
-}
-
-.hero>div:nth-child(2)>div:nth-child(1)>div:nth-child(2){
-  background-color: red;
-}
-
-.hero>div:nth-child(2)>div:nth-child(1)>div:nth-child(3){
-  background-color: green;
-}
-
-.hero>div:nth-child(2)>div:nth-child(1)>div:nth-child(3){
-  background-color: goldenrod;
-}
-
-
-/* ********************************************** */
-
-.hero>div:nth-child(2)>div:nth-child(2)>div:nth-child(1){
-  background-color: goldenrod;
-}
-
-.hero>div:nth-child(2)>div:nth-child(2)>div:nth-child(2){
-  background-color: chocolate;
-}
-
-.hero>div:nth-child(2)>div:nth-child(2)>div:nth-child(3){
-  background-color: brown;
-}
 
 /* card sizes */
 
@@ -105,4 +24,47 @@
 .card-short{
   height: 250px;
   width: 100%;
+}
+
+.grid-column-1frX2{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Testing styles */
+
+.border-solid{
+  border: solid 2px #333;
+}
+
+.bg-blue{
+  background-color: blue;
+}
+
+.bg-yellow{
+  background-color: yellow;
+}
+
+.bg-red{
+  background-color: red;
+}
+
+.bg-brown{
+  background-color: brown;
+}
+
+.bg-chocolate{
+  background-color: chocolate;
+}
+
+.bg-gold{
+  background-color: goldenrod;
+}
+
+.bg-purple{
+  background-color: purple;
+}
+
+.bg-green{
+  background-color: green;
 }
