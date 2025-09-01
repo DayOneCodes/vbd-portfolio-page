@@ -36,8 +36,12 @@ listItems.forEach((item)=>{
   useFunction.unselectOtherItems(listItems, item);
 
   
-    if (item.textContent === 'JOBS'){
+    if (item.textContent.trim() === 'JOBS'){
       switchTo.jobsCategory();
+    }
+
+    else if (item.textContent.trim() === 'PARTIES'){
+      switchTo.test();
     }
   
 

@@ -19,11 +19,14 @@
 .card-long{
   height: 400px;
   width: 100%;
+  transition: all 0.2s ease-in-out;
 }
 
 .card-short{
   height: 250px;
   width: 100%;
+  transition: all 0.2s ease-in-out;
+
 }
 
 .grid-column-1frX2{
@@ -36,20 +39,35 @@
 /* Jobs Category styles */
 
 .jobs-card-one{
-  position: relative;
-  right: -101%;
+  transform: translateX(101%);
 }
 
 .jobs-card-two{
-  position: relative;
-  top: -27.7%;
+  transform: translateY(-160%);
 }
 
 .jobs-card-three{
-  position: relative;
-  top: -27.8%;
+  transform: translateY(-160%);
 }
 
 .jobs-card-four{
+  display: none;
+}
+
+.jobs-card-five{
+  position: relative;
+  bottom: -27.6%;
+}
+
+.jobs-card-six{
+  position: relative;
+  bottom: -27.6%;
+}
+
+.jobs-card-seven{
+ transform: translateX(-100.97%);
+}
+
+.jobs-card-eight{
   display: none;
 }
