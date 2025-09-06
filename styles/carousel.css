@@ -1,4 +1,4 @@
-.hero>div{
+/* .hero>div{
   border: 2px solid #333;
 }
 
@@ -6,11 +6,11 @@
   border: solid 2px #333;
 }
 
-/* *******************Second column******************** */
+
 
 .hero>div:nth-child(2)>div{
   border: solid 2px #333;
-}
+} */
 
 
 
@@ -39,7 +39,7 @@
 /* Jobs Category styles */
 
 .jobs-card-one{
-  transform: translateX(101%);
+  transform: translateX(100%);
 }
 
 .jobs-card-two{
@@ -65,9 +65,44 @@
 }
 
 .jobs-card-seven{
- transform: translateX(-100.97%);
+ transform: translateX(-100%);
 }
 
 .jobs-card-eight{
   display: none;
 }
+
+.jobs-card-nine{
+  position: relative;
+  top: 20.7%;
+}
+
+.jobs-card-ten{
+  display: none;
+}
+
+.jobs-card-eleven{
+  position: relative;
+  left: 100%;
+}
+
+.jobs-card-twelve{
+  position: relative;
+  top: -17.5%;
+}
+
+.jobs-card-thirteen{
+  position: relative;
+  left: -100%;
+}
+
+.jobs-card-fourteen{
+  position: relative;
+  bottom: 23.84%;
+}
+
+.jobs-card-fifteen{
+display: none;
+}
+
+/***************** Personal Photos Category********** */

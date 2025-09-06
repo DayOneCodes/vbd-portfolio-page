@@ -41,7 +41,7 @@ listItems.forEach((item)=>{
     }
 
     else if (item.textContent.trim() === 'PARTIES'){
-      switchTo.test();
+      switchTo.partiesCategory();
     }
   
 

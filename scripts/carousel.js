@@ -5,27 +5,30 @@ const rowThree = document.querySelectorAll('.js-column-three>div');
 const rowFour = document.querySelectorAll('.js-column-four>div');
 
 export class SwitchCarouselTo {
-  test (){
-    console.log('testig confirmed')
-    rowOne[0].classList.remove('jobs-card-one');
-    rowOne[1].classList.remove('jobs-card-two');
-    rowOne[2].classList.remove('jobs-card-three');
-    rowOne[3].classList.remove('jobs-card-four');
-    rowTwo[0].classList.remove('jobs-card-five');
-    rowTwo[1].classList.remove('jobs-card-six');
-    rowTwo[2].classList.remove('jobs-card-seven');
-    rowTwo[3].classList.remove('jobs-card-eight');
+  operate (operation, category) {
+    rowOne[0].classList[`${operation}`](`${category}-card-one`);
+    rowOne[1].classList[`${operation}`](`${category}-card-two`);
+    rowOne[2].classList[`${operation}`](`${category}-card-three`);
+    rowOne[3].classList[`${operation}`](`${category}-card-four`);
+    rowTwo[0].classList[`${operation}`](`${category}-card-five`);
+    rowTwo[1].classList[`${operation}`](`${category}-card-six`);
+    rowTwo[2].classList[`${operation}`](`${category}-card-seven`);
+    rowTwo[3].classList[`${operation}`](`${category}-card-eight`);
+    rowThree[0].classList[`${operation}`](`${category}-card-nine`);
+    rowThree[1].classList[`${operation}`](`${category}-card-ten`);
+    rowThree[2].classList[`${operation}`](`${category}-card-eleven`);
+    rowThree[3].classList[`${operation}`](`${category}-card-twelve`);
+    rowFour[0].classList[`${operation}`](`${category}-card-thirteen`);
+    rowFour[1].classList[`${operation}`](`${category}-card-fourteen`);
+    rowFour[2].classList[`${operation}`](`${category}-card-fifteen`)
+  }
+
+  partiesCategory (){
+    this.operate('remove', 'jobs')
   }
 
   jobsCategory () {
-    rowOne[0].classList.add('jobs-card-one');
-    rowOne[1].classList.add('jobs-card-two');
-    rowOne[2].classList.add('jobs-card-three');
-    rowOne[3].classList.add('jobs-card-four');
-    rowTwo[0].classList.add('jobs-card-five');
-    rowTwo[1].classList.add('jobs-card-six');
-    rowTwo[2].classList.add('jobs-card-seven');
-    rowTwo[3].classList.add('jobs-card-eight');
+    this.operate('add', 'jobs')
   }
 
   personalPhotosCategory () {
