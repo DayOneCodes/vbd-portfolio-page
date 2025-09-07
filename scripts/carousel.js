@@ -20,22 +20,30 @@ export class SwitchCarouselTo {
     rowThree[3].classList[`${operation}`](`${category}-card-twelve`);
     rowFour[0].classList[`${operation}`](`${category}-card-thirteen`);
     rowFour[1].classList[`${operation}`](`${category}-card-fourteen`);
-    rowFour[2].classList[`${operation}`](`${category}-card-fifteen`)
+    rowFour[2].classList[`${operation}`](`${category}-card-fifteen`);
   }
 
   partiesCategory (){
-    this.operate('remove', 'jobs')
+    this.operate('remove', 'jobs');
+    this.operate('remove', 'personal');
+    this.operate('remove', 'retro');
   }
 
   jobsCategory () {
-    this.operate('add', 'jobs')
+    this.operate('add', 'jobs');
+    this.operate('remove', 'personal');
+    this.operate('remove', 'retro');
   }
 
   personalPhotosCategory () {
-
+    this.operate('add', 'personal');
+    this.operate('remove', 'retro');
+    this.operate('remove', 'jobs');
   }
 
   retroCategory () {
-
+    this.operate('add', 'retro');
+    this.operate('remove', 'jobs');
+    this.operate('remove', 'personal');
   }
 }

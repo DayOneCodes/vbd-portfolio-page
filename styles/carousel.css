@@ -1,18 +1,3 @@
-/* .hero>div{
-  border: 2px solid #333;
-}
-
-.hero>div:nth-child(1)>div{
-  border: solid 2px #333;
-}
-
-
-
-.hero>div:nth-child(2)>div{
-  border: solid 2px #333;
-} */
-
-
 
 /* card sizes */
 
@@ -56,12 +41,12 @@
 
 .jobs-card-five{
   position: relative;
-  bottom: -27.6%;
+  bottom: -37.6%;
 }
 
 .jobs-card-six{
   position: relative;
-  bottom: -27.6%;
+  bottom: -37.6%;
 }
 
 .jobs-card-seven{
@@ -106,3 +91,75 @@ display: none;
 }
 
 /***************** Personal Photos Category********** */
+
+
+.personal-card-one{
+  position: relative;
+  bottom: -27.9%;
+}
+
+.personal-card-two{
+  position: relative;
+  top: -44.4%;
+}
+
+.personal-card-three{
+  position: relative;
+  bottom: 72.2%;
+  right: -100%;
+}
+
+.personal-card-four{
+  display: none;
+}
+
+.personal-card-five{
+  position: relative;
+  top: 27.8%;
+}
+
+.personal-card-six{
+  position: relative;
+  top: 44.5%;
+  left: -100%;
+}
+
+.personal-card-seven{
+
+}
+
+.personal-card-eight{
+  display: none;
+}
+
+.personal-card-nine{
+  display: none;
+}
+
+.personal-card-ten{
+  
+}
+
+.personal-card-eleven{
+  position: relative;
+  top: 27.7%;
+}
+
+.personal-card-twelve{
+  position: relative;
+  top: -44.5%;
+}
+
+.personal-card-thirteen{
+  position: relative;
+  top: 44.4%;
+}
+
+.personal-card-fourteen{
+  position: relative;
+  top: -27.8%;
+}
+
+.personal-card-fifteen{
+display: none;
+}

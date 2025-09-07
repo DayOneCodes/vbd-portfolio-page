@@ -43,6 +43,13 @@ listItems.forEach((item)=>{
     else if (item.textContent.trim() === 'PARTIES'){
       switchTo.partiesCategory();
     }
+
+    else if (item.textContent.trim() === 'PERSONAL PHOTOS'){
+      switchTo.personalPhotosCategory();
+    }
+    else if (item.textContent.trim() === 'RETRO'){
+      switchTo.retroCategory();
+    }
   
 
   });
