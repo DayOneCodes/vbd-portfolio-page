@@ -1,5 +1,8 @@
 @import url('carousel.css');
 @import url('test-styles.css');
+@import url('./responsivity/mobile.css');
+@import url('./responsivity/tablet.css');
+
 
 *{
   margin: 0;

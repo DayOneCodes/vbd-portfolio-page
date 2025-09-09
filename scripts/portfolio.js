@@ -15,7 +15,7 @@ partiesCategory.classList.add('text-bold-purple');
 useFunction.animateHeader(headerElement);
 
 
-//Animate header colors
+//Animate header color on scroll
 document.addEventListener('scroll', () => {
  useFunction.animateHeader(headerElement);
 });
