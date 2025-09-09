@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Playfair Display SC", serif;
 }
 
 body{
@@ -84,7 +85,14 @@ hr{
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: 500px;
+  height: auto;
+}
+
+/* *****************FOOTER******************* */
+
+footer{
+  height: 100px;
+  border: 2px solid #333;
 }
 
 /* FOR JAVASCRIPT TOGGLES */

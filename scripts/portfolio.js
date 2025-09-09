@@ -30,7 +30,7 @@ listItems.forEach((item)=>{
   item.addEventListener('click', () => {
 
 //Toggle the bold text on click to indicate selected list item
-  item.classList.toggle('text-bold-purple');
+  item.classList.add('text-bold-purple');
 
 //Unselect other navigation list items
   useFunction.unselectOtherItems(listItems, item);
