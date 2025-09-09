@@ -11,7 +11,6 @@
   height: 250px;
   width: 100%;
   transition: all 0.2s ease-in-out;
-
 }
 
 .grid-column-1frX2{
@@ -90,8 +89,8 @@
 display: none;
 }
 
-/***************** Personal Photos Category********** */
 
+/***************** Personal Photos Category********** */
 
 .personal-card-one{
   position: relative;
@@ -162,4 +161,70 @@ display: none;
 
 .personal-card-fifteen{
 display: none;
+}
+
+/* ************************* Retro Category *********************** */
+
+
+.retro-card-one{
+  display: none;
+}
+
+.retro-card-two{
+  transform: translateX(100%);
+}
+
+.retro-card-three{
+  transform: translateY(60%);
+}
+
+.retro-card-four{
+ transform: translateY(-125%);
+}
+
+.retro-card-five{
+ transform: translateY(100%);
+}
+
+.retro-card-six{
+ transform: translateY(100%);
+  
+}
+
+.retro-card-seven{
+ display: none; 
+}
+
+.retro-card-eight{
+  transform: translateX(-100%) translateY(60%);
+}
+
+.retro-card-nine{
+  display: none;
+}
+
+.retro-card-ten{
+  transform: translateY(260%);
+
+}
+
+.retro-card-eleven{
+  transform: translateX(100%);
+  
+}
+
+.retro-card-twelve{
+  transform: translateY(-260%) translateX(100%);
+}
+
+.retro-card-thirteen{
+  transform: translateX(-100%);
+}
+
+.retro-card-fourteen{
+  transform: translateX(-100%);
+}
+
+.retro-card-fifteen{
+ display: none;
 }
