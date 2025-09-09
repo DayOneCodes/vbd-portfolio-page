@@ -11,17 +11,13 @@ const switchTo = new carousel.SwitchCarouselTo;
 
 
 //Default states
-partiesCategory.classList.add('text-bold-purple')
+partiesCategory.classList.add('text-bold-purple');
+useFunction.animateHeader(headerElement);
 
 
 //Animate header colors
 document.addEventListener('scroll', () => {
-  if (window.scrollY >= 60){
-    headerElement.classList.add('header-switch')
-  }
-  else {
-    headerElement.classList.remove('header-switch')
-  }
+ useFunction.animateHeader(headerElement);
 });
 
 

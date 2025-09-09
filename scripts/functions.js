@@ -8,4 +8,12 @@ export function unselectOtherItems (fullList, currentSelectedItem) {
   });
 };
 
-//Handle showcasing selected photos
+//Handle animating the header background color
+export function animateHeader (headerElement) {
+   if (window.scrollY >= 60){
+    headerElement.classList.add('header-switch')
+  }
+  else {
+    headerElement.classList.remove('header-switch')
+  }
+}
