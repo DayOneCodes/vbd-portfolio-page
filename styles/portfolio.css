@@ -9,6 +9,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Playfair Display SC", serif;
+  cursor: default;
 }
 
 body{
@@ -66,6 +67,8 @@ color: purple;
 
 .container .title h1 {
   margin: 10px 0 20px 0;
+  color: purple;
+  font-weight: 600;
 }
 
 .container .title ul li{
@@ -96,7 +99,15 @@ hr{
 footer{
   height: 100px;
   border: 2px solid #333;
+  display: flex;
 }
+
+footer>p{
+  color: red;
+  margin: auto;
+}
+
+
 
 /* FOR JAVASCRIPT TOGGLES */
 .text-bold-purple{
