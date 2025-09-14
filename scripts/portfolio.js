@@ -84,6 +84,24 @@ document.body.addEventListener('click', (event) => {
   photoDivElement.style.backgroundImage = `${clickedLong ?  window.getComputedStyle(clickedLong).backgroundImage :  window.getComputedStyle(clickedShort).backgroundImage}`
   console.log('Image changed accordingly')
 
+  //Take the image from the outlne section just changed and get its length and width properties
+  const currentImageURL = photoDivElement.style.backgroundImage.slice(5, -2);
+  const img = new Image ();
+  img.src = currentImageURL;
+  img.onload = () => {
+  
+  //Set the proper scaled dimensions for the photo div outlining the image
+    if (img.naturalHeight > 1250) {
+      photoDivElement.style.width =  `${img.naturalWidth/2.5}px`;
+      photoDivElement.style.height = `${img.naturalHeight/2.5}px`;
+    }
+    else {
+      photoDivElement.style.width =  `${img.naturalWidth/2}px`;
+      photoDivElement.style.height = `${img.naturalHeight/2}px`;
+    }
+  }
+
+
   //Fetch photo details from public file using current category
   useFunction.fetchData(`../public/${currentCategory}-photos-details.json`)
    .then((data) => {
