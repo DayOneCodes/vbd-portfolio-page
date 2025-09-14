@@ -2,6 +2,7 @@
 @import url('test-styles.css');
 @import url('./responsivity/mobile.css');
 @import url('./responsivity/tablet.css');
+@import url('./photo-outliner.css');
 
 
 *{
@@ -125,4 +126,8 @@ footer>p{
 .flex-column{
   display: flex;
   flex-direction: column;
+}
+
+.cursor-pointer{
+  cursor: pointer;
 }

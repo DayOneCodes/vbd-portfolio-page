@@ -11,8 +11,31 @@
 </head>
 <body>
   <div class="container">
+
+    <!-- Photo Outliner Section -->
+    <section id="photo-outline" style="display: none;">
+        <div id="photo-outline-container">
+
+            <button id="previous-button">Previous</button>
+
+            <div id="photo-details-container flex-column">
+                <div id="photo-div">
+                  
+                </div>
+
+                <div id="photo-caption">
+                  Caption
+                </div>
+            </div>
+
+            <button id="next-button">Next</button>
+
+        </div>
+    </section>
+    <!-- End of Photo Outliner section -->
+
     <header>
-      <div class="text-bold">SHOT BY DEE</div>
+      <div class="text-bold">VISUALS BY DAVE</div>
 
       <nav>
         <ul class="nav-list">
@@ -40,32 +63,32 @@
     <section class="hero">
       <div class="grid-column-1frX2">
           <div class="flex-column js-column-one">
-            <div class="card-long bg-red"></div>
-            <div class="card-short bg-blue"></div>
-            <div class="card-short bg-yellow"></div>
-            <div class="card-long bg-green"></div>
+            <div class="card-long cursor-pointer bg-red" data-card-number="1"></div>
+            <div class="card-short cursor-pointer bg-blue" data-card-number="2"></div>
+            <div class="card-short cursor-pointer bg-yellow" data-card-number="3"></div>
+            <div class="card-long cursor-pointer bg-green" data-card-number="4"></div>
           </div>
 
           <div class="flex-column js-column-two">
-            <div class="card-short bg-purple"></div>
-            <div class="card-short bg-yellow"></div>
-            <div class="card-long bg-red"></div>
-            <div class="card-short bg-blue"></div>
+            <div class="card-short cursor-pointer bg-purple" data-card-number="5"></div>
+            <div class="card-short cursor-pointer bg-yellow" data-card-number="6"></div>
+            <div class="card-long cursor-pointer bg-red" data-card-number="7"></div>
+            <div class="card-short cursor-pointer bg-blue" data-card-number="8"></div>
           </div>
       </div>
       
       <div class="grid-column-1frX2">
         <div class="flex-column js-column-three">
-          <div class="card-long bg-blue"></div>
-          <div class="card-short bg-red"></div>
-          <div class="card-long bg-green"></div>
-          <div class="card-short bg-gold"></div>
+          <div class="card-long cursor-pointer bg-blue" data-card-number="9"></div>
+          <div class="card-short cursor-pointer bg-red" data-card-number="10"></div>
+          <div class="card-long cursor-pointer bg-green" data-card-number="11"></div>
+          <div class="card-short cursor-pointer bg-gold" data-card-number="12"></div>
         </div>
 
         <div class="flex-column js-column-four">
-          <div class="card-short bg-gold"></div>
-          <div class="card-long bg-chocolate"></div>
-          <div class="card-long bg-brown"></div>
+          <div class="card-short cursor-pointer bg-gold" data-card-number="13"></div>
+          <div class="card-long cursor-pointer bg-chocolate" data-card-number="14"></div>
+          <div class="card-long cursor-pointer bg-brown" data-card-number="15"></div>
         </div>
       </div>
     </section>

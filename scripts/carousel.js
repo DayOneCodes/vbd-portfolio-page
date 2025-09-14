@@ -24,6 +24,7 @@ export class SwitchCarouselTo {
   }
 
   partiesCategory (){
+    this.operate('add', 'parties');
     this.operate('remove', 'jobs');
     this.operate('remove', 'personal');
     this.operate('remove', 'retro');
@@ -33,17 +34,20 @@ export class SwitchCarouselTo {
     this.operate('add', 'jobs');
     this.operate('remove', 'personal');
     this.operate('remove', 'retro');
+    this.operate('remove', 'parties');
   }
 
   personalPhotosCategory () {
     this.operate('add', 'personal');
     this.operate('remove', 'retro');
     this.operate('remove', 'jobs');
+    this.operate('remove', 'parties');
   }
 
   retroCategory () {
     this.operate('add', 'retro');
     this.operate('remove', 'jobs');
     this.operate('remove', 'personal');
+    this.operate('remove', 'parties');
   }
 }

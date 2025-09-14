@@ -5,12 +5,20 @@
   height: 400px;
   width: 100%;
   transition: all 0.2s ease-in-out;
+box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .card-short{
   height: 250px;
   width: 100%;
   transition: all 0.2s ease-in-out;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card-long:hover, .card-short:hover{
+  opacity: 0.8;
 }
 
 .grid-column-1frX2{
@@ -20,18 +28,151 @@
 
 /* *********SWITCH HANDLERS*********** */
 
+/* Parties Category styles */
+.parties-card-one{
+   background-image: url("../images/carousel images/parties-pc/A11.jpg");
+   background-repeat: no-repeat; 
+  background-position: center;   
+  background-size: cover;
+}
+
+
+.parties-card-two{
+  background-image: url("../images/carousel images/parties-pc/A12.jpg");
+  background-repeat: no-repeat; 
+  background-position: center;   
+  background-size: cover;
+
+}
+
+.parties-card-three{
+ background-image: url("../images/carousel images/parties-pc/A13.jpg");
+background-repeat: no-repeat;  
+background-position: center;  
+background-size: cover;
+ 
+  
+   
+}
+
+.parties-card-four{
+background-image: url("../images/carousel images/parties-pc/A14.jpg");
+background-repeat: no-repeat;  
+background-position: center;  
+background-size: cover;
+}
+
+.parties-card-five{
+background-image: url("../images/carousel images/parties-pc/A15.jpg");
+background-repeat: no-repeat;  
+background-position: center;  
+background-size: cover;
+}
+
+.parties-card-six{
+   background-image: url("../images/carousel images/parties-pc/A16.jpg");
+background-repeat: no-repeat;  
+background-position: center;  
+background-size: cover;
+}
+
+.parties-card-seven{
+  background-image: url("../images/carousel images/parties-pc/A17.jpg");
+background-repeat: no-repeat;  
+background-position: center;  
+background-size: cover;
+
+}
+
+.parties-card-eight{
+background-image: url("../images/carousel images/parties-pc/A18.jpg");
+background-repeat: no-repeat;  
+background-position: center;  
+background-size: cover;
+}
+
+.parties-card-nine{
+
+  background-image: url("../images/carousel images/parties-pc/A19.jpg");
+  background-repeat: no-repeat;  
+  background-position: center;  
+  background-size: cover; 
+}
+
+.parties-card-ten{
+background-image: url("../images/carousel images/parties-pc/A20.jpg");
+background-repeat: no-repeat;  
+background-position: center;  
+background-size: cover;
+ 
+}
+
+.parties-card-eleven{
+  background-image: url("../images/carousel images/parties-pc/A21.jpg");
+  background-repeat: no-repeat;  
+  background-position: center;  
+  background-size: cover;
+  
+}
+
+.parties-card-twelve{
+   background-image: url("../images/carousel images/parties-pc/A22.jpg");
+background-repeat: no-repeat;  
+background-position: center;  
+background-size: cover;
+}
+
+.parties-card-thirteen{
+   background-image: url("../images/carousel images/parties-pc/A23.jpg");
+background-repeat: no-repeat;  
+background-position: center;  
+background-size: cover;
+   
+}
+
+.parties-card-fourteen{
+  background-image: url("../images/carousel images/parties-pc/A24.jpg");
+  background-repeat: no-repeat;  
+  background-position: center;  
+  background-size: cover;
+}
+
+.parties-card-fifteen{
+background-image: url("../images/carousel images/parties-pc/A25.jpg");
+background-repeat: no-repeat;  
+background-position: center;  
+background-size: cover;
+}
+
+
 /* Jobs Category styles */
 
 .jobs-card-one{
   transform: translateX(100%);
+   background-image: url("../images/carousel images/lifestyle-pc/-1486412983.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
 }
 
 .jobs-card-two{
   transform: translateY(-160%);
+  background-image: url("../images/carousel images/lifestyle-pc/-702603178.jpg");
+  background-repeat: no-repeat; 
+  background-position: center;   
+  background-size: cover;
+
 }
 
 .jobs-card-three{
   transform: translateY(-160%);
+ background-image: url("../images/carousel images/lifestyle-pc/A7.jpg");
+background-repeat: no-repeat;  
+background-position: center;  
+background-size: cover;
+ 
+  
+   
 }
 
 .jobs-card-four{
@@ -41,15 +182,29 @@
 .jobs-card-five{
   position: relative;
   bottom: -37.6%;
+background-image: url("../images/carousel images/lifestyle-pc/A4.jpg");
+background-repeat: no-repeat;  
+background-position: center;  
+background-size: cover;
 }
 
 .jobs-card-six{
   position: relative;
   bottom: -37.6%;
+   background-image: url("../images/carousel images/lifestyle-pc/A10.jpg");
+background-repeat: no-repeat;  
+background-position: center;  
+background-size: cover;
 }
 
 .jobs-card-seven{
  transform: translateX(-100%);
+  
+  background-image: url("../images/carousel images/lifestyle-pc/A2.jpg");
+background-repeat: no-repeat;  
+background-position: center;  
+background-size: cover;
+
 }
 
 .jobs-card-eight{
@@ -58,31 +213,54 @@
 
 .jobs-card-nine{
   position: relative;
-  top: 20.7%;
+  top: 22.7%;
+  background-image: url("../images/carousel images/lifestyle-pc/-1231774395.jpg");
+  background-repeat: no-repeat;  
+  background-position: center;  
+  background-size: cover; 
 }
 
 .jobs-card-ten{
   display: none;
+ 
 }
 
 .jobs-card-eleven{
   position: relative;
   left: 100%;
+  background-image: url("../images/carousel images/lifestyle-pc/1888393390.jpg");
+  background-repeat: no-repeat;  
+  background-position: center;  
+  background-size: cover;
+  
 }
 
 .jobs-card-twelve{
   position: relative;
   top: -17.5%;
+   background-image: url("../images/carousel images/lifestyle-pc/A5.jpg");
+background-repeat: no-repeat;  
+background-position: center;  
+background-size: cover;
 }
 
 .jobs-card-thirteen{
   position: relative;
   left: -100%;
+   background-image: url("../images/carousel images/lifestyle-pc/A9.jpg");
+background-repeat: no-repeat;  
+background-position: center;  
+background-size: cover;
+   
 }
 
 .jobs-card-fourteen{
   position: relative;
   bottom: 23.84%;
+  background-image: url("../images/carousel images/lifestyle-pc/1716050292.jpg");
+  background-repeat: no-repeat;  
+  background-position: center;  
+  background-size: cover;
 }
 
 .jobs-card-fifteen{
