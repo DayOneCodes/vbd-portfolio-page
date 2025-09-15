@@ -21,7 +21,7 @@ const captionDiv = document.getElementById('photo-caption');
 partiesCategory.classList.add('text-bold-purple');
 useFunction.animateHeader(headerElement);
 switchTo.partiesCategory();
-let currentCategory = 'parties';
+window.currentCategory = 'parties';
 
 
 
@@ -44,21 +44,21 @@ listItems.forEach((item)=>{
   
     if (item.textContent.trim() === 'JOBS'){
       switchTo.jobsCategory();
-      currentCategory = 'jobs';
+      window.currentCategory = 'jobs';
     }
 
     else if (item.textContent.trim() === 'PARTIES'){
       switchTo.partiesCategory();
-      currentCategory = 'parties';
+      window.currentCategory = 'parties';
     }
 
     else if (item.textContent.trim() === 'PERSONAL PHOTOS'){
       switchTo.personalPhotosCategory();
-      currentCategory = 'personal photos';
+      window.currentCategory = 'personal photos';
     }
     else if (item.textContent.trim() === 'RETRO'){
       switchTo.retroCategory();
-      currentCategory = 'retro';
+      window.currentCategory = 'retro';
     }
   
 
@@ -103,7 +103,7 @@ document.body.addEventListener('click', (event) => {
 
 
   //Fetch photo details from public file using current category
-  useFunction.fetchData(`../public/${currentCategory}-photos-details.json`)
+  useFunction.fetchData(`../public/${window.currentCategory}-photos-details.json`)
    .then((data) => {
       Object.entries(data)
         .forEach((cardDetails) => {
@@ -113,9 +113,14 @@ document.body.addEventListener('click', (event) => {
         const  cardNumberClicked = clickedLong ? clickedLong.dataset.cardNumber: clickedShort.dataset.cardNumber;
         const cardNumberJSON = cardDetails[1].cardNumber;
 
+
         if (Number (cardNumberClicked) === cardNumberJSON) {
           //change the caption
           captionDiv.innerText = cardDetails[1].caption
+
+          //update the current card being viewed/oulined
+          window.currentCard = cardDetails[1].cardNumber;
+          console.log(`card successfully changed to: ${window.currentCard}`)
         }
         })
    })
