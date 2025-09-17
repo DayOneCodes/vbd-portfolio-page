@@ -14,6 +14,8 @@ const longCards = document.querySelectorAll('.card-long');
 const photoOutliner = document.getElementById('photo-outline');
 const photoDivElement = document.getElementById('photo-div');
 const captionDiv = document.getElementById('photo-caption');
+const prevOutlineButton = document.getElementById('previous-button');
+const nextOutlineButton = document.getElementById('next-button')
 
 
 
@@ -104,20 +106,32 @@ document.body.addEventListener('click', (event) => {
   //Fetch photo details from public file using current category
   useFunction.fetchData(`../public/${window.currentCategory}-photos-details.json`)
    .then((data) => {
-      Object.entries(data)
+     const dataArray = Object.entries(data);
+     const  cardNumberClicked = clickedLong ? clickedLong.dataset.cardNumber: clickedShort.dataset.cardNumber; 
+
+  //Check for start and end of photo list and adjust button opacity
+    if (Number(cardNumberClicked) === 1) {
+      prevOutlineButton.style.opacity = '0.3';
+    } 
+    else if (Number(cardNumberClicked) === dataArray.length) {
+      nextOutlineButton.style.opacity = '0.3';
+    } else if (Number(cardNumberClicked) !== 1 && Number(cardNumberClicked) !== dataArray.length) {
+      prevOutlineButton.style.opacity = '1';
+      nextOutlineButton.style.opacity = '1';
+    }
+
+     dataArray
         .forEach((cardDetails) => {
 
   //Check which of the photos' number corresponds to the card Number of the card  clicked
-
-        const  cardNumberClicked = clickedLong ? clickedLong.dataset.cardNumber: clickedShort.dataset.cardNumber;
         const cardNumberJSON = cardDetails[1].cardNumber;
 
 
         if (Number (cardNumberClicked) === cardNumberJSON) {
-          //change the caption
+  //change the caption
           captionDiv.innerText = cardDetails[1].caption
 
-          //update the current card being viewed/oulined
+  //update the current card being viewed/oulined
           window.currentCard = cardDetails[1].cardNumber;
           console.log(`card successfully changed to: ${window.currentCard}`)
         }

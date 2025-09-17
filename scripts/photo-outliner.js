@@ -16,6 +16,8 @@ photoOutliner.addEventListener('click', async (event) => {
   if (!previousBtnElement.contains(event.target) && !nextBtnElement.contains(event.target)){
     photoOutliner.style.display = 'none';
     captionDiv.innerText = '';
+    nextBtnElement.style.opacity = '1';
+    previousBtnElement.style.opacity = 1;
   }
 
   if (previousBtnElement.contains(event.target)) {
