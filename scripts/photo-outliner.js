@@ -18,6 +18,7 @@ photoOutliner.addEventListener('click', async (event) => {
   }
 
   if (previousBtnElement.contains(event.target)) {
+
       if (window.currentCard === 1) {
         window.currentCard = window.currentCard;
       } else if (window.currentCard === 2) {
@@ -31,6 +32,7 @@ photoOutliner.addEventListener('click', async (event) => {
       const details = await updatePhotoDetails(window.currentCard);
       photoDiv.style.backgroundImage = `url("${details.url}")`;
       captionDiv.innerText = details.caption;
+
   }
   else if (nextBtnElement.contains(event.target)){
     
@@ -48,8 +50,11 @@ photoOutliner.addEventListener('click', async (event) => {
       if (details.length === currentCard){
         nextBtnElement.style.opacity = '0.3';
       }  
+
+      
   }
 });
+
 
 
 

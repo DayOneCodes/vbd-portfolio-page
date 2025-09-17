@@ -41,20 +41,19 @@ listItems.forEach((item)=>{
 //Unselect other navigation list items
   useFunction.unselectOtherItems(listItems, item);
 
-  
-    if (item.textContent.trim() === 'JOBS'){
-      switchTo.jobsCategory();
-      window.currentCategory = 'jobs';
-    }
-
-    else if (item.textContent.trim() === 'PARTIES'){
+    if (item.textContent.trim() === 'PARTIES'){
       switchTo.partiesCategory();
       window.currentCategory = 'parties';
     }
 
-    else if (item.textContent.trim() === 'PERSONAL PHOTOS'){
+     else if (item.textContent.trim() === 'LIFESTYLE'){
+      switchTo.lifestyleCategory();
+      window.currentCategory = 'lifestyle';
+    }
+
+    else if (item.textContent.trim() === 'PORTRAIT'){
       switchTo.personalPhotosCategory();
-      window.currentCategory = 'personal photos';
+      window.currentCategory = 'portrait';
     }
     else if (item.textContent.trim() === 'RETRO'){
       switchTo.retroCategory();

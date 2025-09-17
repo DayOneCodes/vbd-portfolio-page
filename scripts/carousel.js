@@ -24,13 +24,36 @@ export class SwitchCarouselTo {
   }
 
   partiesCategory (){
+    rowOne[0].dataset.cardNumber = 1;
+     rowOne[1].dataset.cardNumber = 2;
+    rowOne[2].dataset.cardNumber = 3
+    rowOne[3].dataset.cardNumber = 4
+    rowTwo[0].dataset.cardNumber = 5
+    rowTwo[1].dataset.cardNumber = 6
+    rowTwo[2].dataset.cardNumber = 7
+    rowTwo[3].dataset.cardNumber = 8
+    rowThree[0].dataset.cardNumber = 9
+    rowThree[1].dataset.cardNumber = 10
+    rowThree[2].dataset.cardNumber = 11
+    rowThree[3].dataset.cardNumber = 12
+    rowFour[0].dataset.cardNumber = 13
+    rowFour[1].dataset.cardNumber = 14
+    rowFour[2].dataset.cardNumber = 15;
     this.operate('add', 'parties');
     this.operate('remove', 'jobs');
     this.operate('remove', 'personal');
     this.operate('remove', 'retro');
   }
 
-  jobsCategory () {
+  lifestyleCategory () {
+    rowOne[1].dataset.cardNumber = 1;
+    rowOne[2].dataset.cardNumber = 2;
+    rowTwo[2].dataset.cardNumber = 3;
+    rowOne[0].dataset.cardNumber = 4;
+    rowFour[0].dataset.cardNumber = 7;
+    rowThree[0].dataset.cardNumber = 8;
+    rowThree[3].dataset.cardNumber = 9;
+    rowFour[1].dataset.cardNumber = 10;
     this.operate('add', 'jobs');
     this.operate('remove', 'personal');
     this.operate('remove', 'retro');
@@ -38,6 +61,16 @@ export class SwitchCarouselTo {
   }
 
   personalPhotosCategory () {
+    rowOne[1].dataset.cardNumber = 1;
+    rowOne[0].dataset.cardNumber = 2;
+    rowTwo[1].dataset.cardNumber = 3;
+    rowOne[2].dataset.cardNumber = 4;
+    rowTwo[2].dataset.cardNumber = 6;
+    rowThree[1].dataset.cardNumber = 7;
+    rowThree[3].dataset.cardNumber = 8;
+    rowThree[2].dataset.cardNumber = 9;
+    rowFour[1].dataset.cardNumber = 10;
+    rowFour[0].dataset.cardNumber = 11;
     this.operate('add', 'personal');
     this.operate('remove', 'retro');
     this.operate('remove', 'jobs');
@@ -45,6 +78,14 @@ export class SwitchCarouselTo {
   }
 
   retroCategory () {
+    rowOne[3].dataset.cardNumber = 1;
+    rowOne[2].dataset.cardNumber = 2
+    rowTwo[3].dataset.cardNumber = 3
+    rowOne[1].dataset.cardNumber = 4;
+    rowFour[0].dataset.cardNumber = 7;
+    rowFour[1].dataset.cardNumber = 8;
+    rowThree[1].dataset.cardNumber = 9
+    rowThree[3].dataset.cardNumber = 10
     this.operate('add', 'retro');
     this.operate('remove', 'jobs');
     this.operate('remove', 'personal');

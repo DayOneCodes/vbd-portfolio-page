@@ -273,17 +273,29 @@ display: none;
 .personal-card-one{
   position: relative;
   bottom: -27.9%;
+  background-image: url("../images/carousel images/portrait-pc/A13.jpg");
+background-repeat: no-repeat;  
+background-position: center;  
+background-size: cover;
 }
 
 .personal-card-two{
   position: relative;
   top: -44.4%;
+    background-image: url("../images/carousel images/portrait-pc/#.jpg");
+background-repeat: no-repeat;  
+background-position: center;  
+background-size: cover;
 }
 
 .personal-card-three{
   position: relative;
   bottom: 72.2%;
   right: -100%;
+  background-image: url("../images/carousel images/portrait-pc/AA.jpg");
+background-repeat: no-repeat;  
+background-position: center;  
+background-size: cover;
 }
 
 .personal-card-four{
@@ -293,16 +305,27 @@ display: none;
 .personal-card-five{
   position: relative;
   top: 27.8%;
+  background-image: url("../images/carousel images/portrait-pc/AB.jpg");
+background-repeat: no-repeat;  
+background-position: center;  
+background-size: cover;
 }
 
 .personal-card-six{
   position: relative;
   top: 44.5%;
   left: -100%;
+  background-image: url("../images/carousel images/portrait-pc/AC.jpg");
+background-repeat: no-repeat;  
+background-position: center;  
+background-size: cover;
 }
 
 .personal-card-seven{
-
+  background-image: url("../images/carousel images/portrait-pc/A16.jpg");
+background-repeat: no-repeat;  
+background-position: center;  
+background-size: cover;
 }
 
 .personal-card-eight{
@@ -320,21 +343,37 @@ display: none;
 .personal-card-eleven{
   position: relative;
   top: 27.7%;
+  background-image: url("../images/carousel images/portrait-pc/A19.jpg");
+background-repeat: no-repeat;  
+background-position: center;  
+background-size: cover;
 }
 
 .personal-card-twelve{
   position: relative;
   top: -44.5%;
+  background-image: url("../images/carousel images/portrait-pc/A20.jpg");
+background-repeat: no-repeat;  
+background-position: center;  
+background-size: cover;
 }
 
 .personal-card-thirteen{
   position: relative;
   top: 44.4%;
+  background-image: url("../images/carousel images/portrait-pc/A13.jpg");
+background-repeat: no-repeat;  
+background-position: center;  
+background-size: cover;
 }
 
 .personal-card-fourteen{
   position: relative;
   top: -27.8%;
+  background-image: url("../images/carousel images/portrait-pc/A20.jpg");
+background-repeat: no-repeat;  
+background-position: center;  
+background-size: cover;
 }
 
 .personal-card-fifteen{
