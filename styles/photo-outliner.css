@@ -32,6 +32,7 @@
 }
 
 #photo-caption{
+  font-family: "Playfair Display", serif;
  max-width: 100%;
  color: white;
  display: flex;
@@ -40,6 +41,7 @@
 }
 
 #photo-outline>#photo-outline-container>button{
+  font-family: "Playfair Display", serif;
   border: none;
   padding: 0.3%;
   border-radius: 10%;

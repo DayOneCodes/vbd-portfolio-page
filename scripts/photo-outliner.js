@@ -4,6 +4,7 @@ const nextBtnElement = document.getElementById('next-button');
 const photoDiv = document.getElementById('photo-div');
 const captionDiv = document.getElementById('photo-caption');
 
+
 window.currentCard = 0;
 
 photoOutliner.addEventListener('click', async (event) => {
@@ -32,7 +33,7 @@ photoOutliner.addEventListener('click', async (event) => {
       const details = await updatePhotoDetails(window.currentCard);
       photoDiv.style.backgroundImage = `url("${details.url}")`;
       captionDiv.innerText = details.caption;
-
+      scaleDimensionsFor(photoDiv);
   }
   else if (nextBtnElement.contains(event.target)){
     
@@ -46,12 +47,12 @@ photoOutliner.addEventListener('click', async (event) => {
       photoDiv.style.backgroundImage = `url("${details.url}")`;
       previousBtnElement.style.opacity = 1;
       captionDiv.innerText = details.caption;
+      scaleDimensionsFor(photoDiv);
 
       if (details.length === currentCard){
         nextBtnElement.style.opacity = '0.3';
       }  
 
-      
   }
 });
 
@@ -90,3 +91,25 @@ async function updatePhotoDetails (num) {
       url: '', caption: ''};
     }
 };
+
+
+//LES FUNCTIONES
+
+   //Handle photoDiv scaling
+export function scaleDimensionsFor (div) {
+      const currentImageURL = div.style.backgroundImage.slice(5, -2);
+      const img = new Image ();
+      img.src = currentImageURL;
+      img.onload = () => {
+      
+      //Set the proper scaled dimensions for the photo div outlining the image
+        if (img.naturalHeight > 1250) {
+          div.style.width =  `${img.naturalWidth/2.5}px`;
+          div.style.height = `${img.naturalHeight/2.5}px`;
+        }
+        else {
+          div.style.width =  `${img.naturalWidth/2}px`;
+          div.style.height = `${img.naturalHeight/2}px`;
+        }
+  }
+}
