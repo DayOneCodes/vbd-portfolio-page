@@ -1,6 +1,7 @@
 import * as carousel from "./carousel.js";
 import * as useFunction from "./functions.js";
 import * as photoOutlineScript from "./photo-outliner.js";
+import * as mobile from "./mobile.js";
 
 const listItems = document.querySelectorAll('.js-unordered-list li');
   const partiesCategory = listItems[0];
@@ -21,7 +22,7 @@ const nextOutlineButton = document.getElementById('next-button')
 
 //Default states
 partiesCategory.classList.add('text-bold-purple');
-useFunction.animateHeader(headerElement);
+useFunction.animateOnScroll(headerElement, 'header-switch');
 switchTo.partiesCategory();
 window.currentCategory = 'parties';
 
@@ -29,7 +30,12 @@ window.currentCategory = 'parties';
 
 //Animate header color on scroll
 document.addEventListener('scroll', () => {
- useFunction.animateHeader(headerElement);
+ useFunction.animateOnScroll(headerElement, 'header-switch');
+
+/* For Mobile */
+mobile.hamburgerMenuDivs.forEach((divs) => {
+  useFunction.animateOnScroll(divs, 'hamburger-white')
+})
 });
 
 

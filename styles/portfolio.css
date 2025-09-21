@@ -1,7 +1,5 @@
 @import url('carousel.css');
 @import url('test-styles.css');
-@import url('./responsivity/mobile.css');
-@import url('./responsivity/tablet.css');
 @import url('./photo-outliner.css');
 
 
@@ -53,6 +51,10 @@ color: purple;
 
 .nav-list li:hover{
   border-bottom: solid purple;
+}
+
+.hamburger-menu{
+  display: none;
 }
 
 

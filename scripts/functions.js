@@ -8,13 +8,13 @@ export function unselectOtherItems (fullList, currentSelectedItem) {
   });
 };
 
-//Handle animating the header background color
-export function animateHeader (headerElement) {
+//Handle scroll animations. 
+export function animateOnScroll (elementToAnimate, animationClass) {
    if (window.scrollY >= 60){
-    headerElement.classList.add('header-switch')
+    elementToAnimate.classList.add(`${animationClass}`)
   }
   else {
-    headerElement.classList.remove('header-switch')
+    elementToAnimate.classList.remove(`${animationClass}`)
   }
 }
 
@@ -37,4 +37,3 @@ export async function fetchData (url) {
       throw error;
   }
 }
-
