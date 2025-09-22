@@ -23,7 +23,41 @@
   width: 100%;
   z-index: 20;
   border-radius: 5px;
+  transition: all 0.2s ease-in-out;
 }
+
+
+  /* Navs */
+
+  .mobile-nav{
+    display: flex;
+    position: fixed;
+    color: #333;
+    background-color: purple;
+    top: 75px;
+    right: -1px;
+    left: 50%;
+    bottom: 0;
+    background-color: #fff;
+    transition: all 0.2s ease-in-out;
+    transform: translateX(100%);
+  }
+
+  .mobile-nav>nav{
+    margin: 30px auto;
+  }
+
+  .mobile-nav>nav>ul{
+    display: flex;
+    flex-direction: column;
+  }
+
+   .mobile-nav>nav>ul>li{
+    margin: 0 auto 20px auto;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+   }
 
 /* HERO */
 
@@ -37,4 +71,22 @@
   border: 2px solid #fff;
   background-color: #fff;
 }
+
+.mobile-nav-display{
+  transform: translateX(0%);
+}
+
+.hamburger-1{
+  background-color: red;
+  transform: rotate(45deg) translateY(11px);
+}
+
+.hamburger-2{
+  background-color: blue;
+  transform: rotate(-45deg) translateY(-11px); 
+}
+
+.hamburger-3{
+    display: none;
+  }
 }

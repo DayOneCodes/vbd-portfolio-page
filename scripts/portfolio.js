@@ -33,9 +33,12 @@ document.addEventListener('scroll', () => {
  useFunction.animateOnScroll(headerElement, 'header-switch');
 
 /* For Mobile */
+//Toggle hamburger menu color for proper contrast
 mobile.hamburgerMenuDivs.forEach((divs) => {
   useFunction.animateOnScroll(divs, 'hamburger-white')
 })
+
+/* End of mobile script*/
 });
 
 

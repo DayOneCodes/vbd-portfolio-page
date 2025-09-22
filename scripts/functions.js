@@ -10,7 +10,7 @@ export function unselectOtherItems (fullList, currentSelectedItem) {
 
 //Handle scroll animations. 
 export function animateOnScroll (elementToAnimate, animationClass) {
-   if (window.scrollY >= 60){
+   if (window.scrollY >= 40){
     elementToAnimate.classList.add(`${animationClass}`)
   }
   else {
