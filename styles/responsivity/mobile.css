@@ -65,6 +65,11 @@
   font-size: 17px;
 }
 
+#photo-outline>#photo-outline-container{
+ flex-direction: column;
+ justify-content: space-around;
+}
+
 /* JS TOGGLES */
 
 .hamburger-white{

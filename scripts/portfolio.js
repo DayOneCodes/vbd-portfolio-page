@@ -1,5 +1,6 @@
 import * as carousel from "./carousel.js";
 import * as useFunction from "./functions.js";
+import * as outlinerComponent from "./outliner-component.js";
 import * as photoOutlineScript from "./photo-outliner.js";
 import * as mobile from "./mobile.js";
 
@@ -25,6 +26,9 @@ partiesCategory.classList.add('text-bold-purple');
 useFunction.animateOnScroll(headerElement, 'header-switch');
 switchTo.partiesCategory();
 window.currentCategory = 'parties';
+if (window.view === 'desktop'){
+  mobile.mobileNavElement.style.display = 'none';
+}
 
 
 
@@ -102,12 +106,38 @@ document.body.addEventListener('click', (event) => {
   
   //Set the proper scaled dimensions for the photo div outlining the image
     if (img.naturalHeight > 1250) {
-      photoDivElement.style.width =  `${img.naturalWidth/2.5}px`;
-      photoDivElement.style.height = `${img.naturalHeight/2.5}px`;
+      const naturalWidth = img.naturalWidth;
+      const naturalHeight = img.naturalHeight;
+
+      //scale down to half
+      let outlineWidth = naturalWidth / 2.5;
+        let outlineHeight = naturalHeight / 2.5;
+
+      if (outlineWidth > window.innerWidth){
+         outlineHeight = naturalHeight / 3.5;
+         outlineWidth = naturalWidth / 3.5;
+      } 
+      
+      
+
+      photoDivElement.style.width = outlineWidth + 'px';
+      photoDivElement.style.height = outlineHeight + 'px';
     }
     else {
-      photoDivElement.style.width =  `${img.naturalWidth/2}px`;
-      photoDivElement.style.height = `${img.naturalHeight/2}px`;
+    const naturalWidth = img.naturalWidth;
+      const naturalHeight = img.naturalHeight;
+
+      //scale down to half
+      let outlineWidth = naturalWidth / 2;
+      let outlineHeight = naturalHeight / 2;
+
+       if (outlineWidth > window.innerWidth){
+         outlineHeight = naturalHeight / 3;
+         outlineWidth = naturalWidth / 3;
+      } 
+
+        photoDivElement.style.width = outlineWidth + 'px';
+        photoDivElement.style.height = outlineHeight + 'px';
     }
   }
 

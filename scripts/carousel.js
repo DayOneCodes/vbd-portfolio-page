@@ -26,18 +26,18 @@ export class SwitchCarouselTo {
   partiesCategory (){
     rowOne[0].dataset.cardNumber = 1;
      rowOne[1].dataset.cardNumber = 2;
-    rowOne[2].dataset.cardNumber = 3
-    rowOne[3].dataset.cardNumber = 4
-    rowTwo[0].dataset.cardNumber = 5
-    rowTwo[1].dataset.cardNumber = 6
-    rowTwo[2].dataset.cardNumber = 7
-    rowTwo[3].dataset.cardNumber = 8
-    rowThree[0].dataset.cardNumber = 9
-    rowThree[1].dataset.cardNumber = 10
-    rowThree[2].dataset.cardNumber = 11
-    rowThree[3].dataset.cardNumber = 12
-    rowFour[0].dataset.cardNumber = 13
-    rowFour[1].dataset.cardNumber = 14
+    rowOne[2].dataset.cardNumber = 3;
+    rowOne[3].dataset.cardNumber = 4;
+    rowTwo[0].dataset.cardNumber = 5;
+    rowTwo[1].dataset.cardNumber = 6;
+    rowTwo[2].dataset.cardNumber = 7;
+    rowTwo[3].dataset.cardNumber = 8;
+    rowThree[0].dataset.cardNumber = 9;
+    rowThree[1].dataset.cardNumber = 10;
+    rowThree[2].dataset.cardNumber = 11;
+    rowThree[3].dataset.cardNumber = 12;
+    rowFour[0].dataset.cardNumber = 13;
+    rowFour[1].dataset.cardNumber = 14;
     rowFour[2].dataset.cardNumber = 15;
     this.operate('add', 'parties');
     this.operate('remove', 'jobs');
