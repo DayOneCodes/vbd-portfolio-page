@@ -106,12 +106,36 @@ export function scaleDimensionsFor (div) {
       
       //Set the proper scaled dimensions for the photo div outlining the image
         if (img.naturalHeight > 1250) {
-          div.style.width =  `${img.naturalWidth/2.5}px`;
-          div.style.height = `${img.naturalHeight/2.5}px`;
+          const naturalWidth = img.naturalWidth;
+          const naturalHeight = img.naturalHeight;
+
+          //Scale down to half
+          let outlineWidth = naturalWidth / 2.5;
+          let outlineHeight = naturalHeight / 2.5;
+
+          if (outlineWidth > window.innerWidth) {
+            outlineHeight = naturalHeight / 3.5;
+            outlineWidth = naturalWidth / 3.5
+          }
+
+          div.style.width =  outlineWidth + 'px';
+          div.style.height = outlineHeight + 'px';
         }
         else {
-          div.style.width =  `${img.naturalWidth/2}px`;
-          div.style.height = `${img.naturalHeight/2}px`;
+          const naturalWidth = img.naturalWidth;
+          const naturalHeight = img.naturalHeight;
+
+          //Scale down to half
+          let outlineWidth = naturalWidth / 2;
+          let outlineHeight = naturalHeight / 2;
+
+          if (outlineWidth > window.innerWidth) {
+            outlineHeight = naturalHeight / 3;
+            outlineWidth = naturalWidth / 3;
+          }
+
+          div.style.width =  outlineWidth + 'px';
+          div.style.height = outlineHeight + 'px';
         }
   }
 }

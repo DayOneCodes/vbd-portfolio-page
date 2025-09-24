@@ -62,7 +62,8 @@
 /* HERO */
 
 .container .title ul li{
-  font-size: 17px;
+  /* font-size: 17px; */
+  font-size: 105%;
 }
 
 #photo-outline>#photo-outline-container{
