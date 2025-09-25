@@ -1,10 +1,9 @@
 const outlinerSection =  document.getElementById('photo-outline');
 const mobileNavElement = document.querySelector('.mobile-nav')
 
+window.outlinerComponent = function () {
 
-window.view = undefined;
-
- if (window.matchMedia("(max-width: 600px)").matches){
+ if (window.mobileQuery.matches){
   window.view = 'mobile';
   mobileNavElement.style.display = 'flex';
 
@@ -24,9 +23,9 @@ window.view = undefined;
     </div>
 
     <div class="outline-buttons">
-      <button id="previous-button" class="js-previous-button">Previous</button>
+      <button id="previous-button" class="js-previous-button">P</button>
 
-      <button id="next-button" class="js-next-button">Next</button>     
+      <button id="next-button" class="js-next-button">N</button>     
     </div>
 
   </div>
@@ -38,7 +37,7 @@ window.view = undefined;
   outlinerSection.innerHTML = 
   `
   <div id="photo-outline-container">  
-    <button id="previous-button" class="js-previous-button">Previous</button>
+    <button id="previous-button" class="js-previous-button">P</button>
 
             <div id="photo-details-container flex-column">
                 <div id="photo-div">
@@ -51,8 +50,18 @@ window.view = undefined;
             </div>
 
 
-    <button id="next-button" class="js-next-button">Next</button>     
+    <button id="next-button" class="js-next-button">N</button>     
 
   </div>
 `
  }
+
+};
+
+window.outlinerComponent();
+
+
+// FUNCTIONS
+function createElement (elementName) {
+  return document.createElement(elementName);
+}
