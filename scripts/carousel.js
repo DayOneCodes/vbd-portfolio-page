@@ -23,7 +23,7 @@ export class SwitchCarouselTo {
     rowFour[2].classList[`${operation}`](`${category}-card-fifteen`);
   }
 
-  partiesCategory (){
+  eventCategory (){
     rowOne[0].dataset.cardNumber = 1;
      rowOne[1].dataset.cardNumber = 2;
     rowOne[2].dataset.cardNumber = 3;
@@ -39,9 +39,9 @@ export class SwitchCarouselTo {
     rowFour[0].dataset.cardNumber = 13;
     rowFour[1].dataset.cardNumber = 14;
     rowFour[2].dataset.cardNumber = 15;
-    this.operate('add', 'parties');
-    this.operate('remove', 'jobs');
-    this.operate('remove', 'personal');
+    this.operate('add', 'event');
+    this.operate('remove', 'lifestyle');
+    this.operate('remove', 'portrait');
     this.operate('remove', 'retro');
   }
 
@@ -54,13 +54,13 @@ export class SwitchCarouselTo {
     rowThree[0].dataset.cardNumber = 8;
     rowThree[3].dataset.cardNumber = 9;
     rowFour[1].dataset.cardNumber = 10;
-    this.operate('add', 'jobs');
-    this.operate('remove', 'personal');
+    this.operate('add', 'lifestyle');
+    this.operate('remove', 'portrait');
     this.operate('remove', 'retro');
-    this.operate('remove', 'parties');
+    this.operate('remove', 'event');
   }
 
-  personalPhotosCategory () {
+  portraitCategory () {
     rowOne[1].dataset.cardNumber = 1;
     rowOne[0].dataset.cardNumber = 2;
     rowTwo[1].dataset.cardNumber = 3;
@@ -71,10 +71,10 @@ export class SwitchCarouselTo {
     rowThree[2].dataset.cardNumber = 9;
     rowFour[1].dataset.cardNumber = 10;
     rowFour[0].dataset.cardNumber = 11;
-    this.operate('add', 'personal');
+    this.operate('add', 'portrait');
     this.operate('remove', 'retro');
-    this.operate('remove', 'jobs');
-    this.operate('remove', 'parties');
+    this.operate('remove', 'lifestyle');
+    this.operate('remove', 'event');
   }
 
   retroCategory () {
@@ -87,8 +87,8 @@ export class SwitchCarouselTo {
     rowThree[1].dataset.cardNumber = 9
     rowThree[3].dataset.cardNumber = 10
     this.operate('add', 'retro');
-    this.operate('remove', 'jobs');
-    this.operate('remove', 'personal');
-    this.operate('remove', 'parties');
+    this.operate('remove', 'lifestyle');
+    this.operate('remove', 'portrait');
+    this.operate('remove', 'event');
   }
 }

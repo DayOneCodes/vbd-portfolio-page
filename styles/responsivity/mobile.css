@@ -66,9 +66,21 @@
   font-size: 105%;
 }
 
+/* PHOTO OUTLINER */
+
 #photo-outline>#photo-outline-container{
  flex-direction: column;
  justify-content: space-around;
+ gap: 10px;
+}
+
+#photo-outline>#photo-outline-container button{
+  padding: 20px;
+}
+
+.outline-buttons{
+  display: flex;
+  gap: 50px;
 }
 
 /* JS TOGGLES */

@@ -45,12 +45,12 @@
 #photo-outline>#photo-outline-container button{
   font-family: "Playfair Display", serif;
   border: none;
-  padding: 0.3%;
-  border-radius: 10%;
+  padding: 2%;
+  border-radius: 150%;
   cursor: pointer;
-  color: white;
+  color: #333;
   font-weight: 600;
-  background-color: purple;
+  background-color: white;
 }
 
 .outline-buttons{

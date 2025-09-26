@@ -1,8 +1,10 @@
+import * as useGlobalScope from "./global-variables.js"
+import * as outlinerComponent from "./outliner-component.js";
 import * as carousel from "./carousel.js";
 import * as useFunction from "./functions.js";
-import * as outlinerComponent from "./outliner-component.js";
 import * as photoOutlineScript from "./photo-outliner.js";
 import * as mobile from "./mobile.js";
+
 
 const listItems = document.querySelectorAll('.js-unordered-list li');
   const partiesCategory = listItems[0];
@@ -17,15 +19,16 @@ const photoOutliner = document.getElementById('photo-outline');
 const photoDivElement = document.getElementById('photo-div');
 const captionDiv = document.getElementById('photo-caption');
 const prevOutlineButton = document.getElementById('previous-button');
-const nextOutlineButton = document.getElementById('next-button')
+const nextOutlineButton = document.getElementById('next-button');
+
 
 
 
 //Default states
 partiesCategory.classList.add('text-bold-purple');
 useFunction.animateOnScroll(headerElement, 'header-switch');
-switchTo.partiesCategory();
-window.currentCategory = 'parties';
+switchTo.eventCategory();
+window.currentCategory = 'event';
 if (window.view === 'desktop'){
   mobile.mobileNavElement.style.display = 'none';
 }
@@ -56,9 +59,9 @@ listItems.forEach((item)=>{
 //Unselect other navigation list items
   useFunction.unselectOtherItems(listItems, item);
 
-    if (item.textContent.trim() === 'PARTIES'){
-      switchTo.partiesCategory();
-      window.currentCategory = 'parties';
+    if (item.textContent.trim() === 'EVENT'){
+      switchTo.eventCategory();
+      window.currentCategory = 'event';
     }
 
      else if (item.textContent.trim() === 'LIFESTYLE'){
@@ -67,7 +70,7 @@ listItems.forEach((item)=>{
     }
 
     else if (item.textContent.trim() === 'PORTRAIT'){
-      switchTo.personalPhotosCategory();
+      switchTo.portraitCategory();
       window.currentCategory = 'portrait';
     }
     else if (item.textContent.trim() === 'RETRO'){
@@ -186,9 +189,6 @@ document.body.addEventListener('click', (event) => {
     console.log('Outline Section displayed successfully')
   }
 });
- 
-
-
 
 
 

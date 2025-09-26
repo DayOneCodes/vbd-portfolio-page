@@ -5,60 +5,56 @@ const photoDiv = document.getElementById('photo-div');
 const captionDiv = document.getElementById('photo-caption');
 
 
-window.currentCard = 0;
+    photoOutliner.addEventListener('click', async (event) => {
+      console.log('Click confirmed successfully: ON OUTLINE SECTION')
 
-photoOutliner.addEventListener('click', async (event) => {
-  console.log('Click confirmed successfully: ON OUTLINE SECTION')
+      console.log(event.target)
 
-  console.log(event.target)
-
-// Check that the click wasn't on the buttons. If it isn't, then close the outline section.
-  if (!previousBtnElement.contains(event.target) && !nextBtnElement.contains(event.target)){
-    photoOutliner.style.display = 'none';
-    captionDiv.innerText = '';
-    nextBtnElement.style.opacity = 1;
-    previousBtnElement.style.opacity = 1;
-  }
-
-  if (previousBtnElement.contains(event.target)) {
-
-      if (window.currentCard === 1) {
-        window.currentCard = window.currentCard;
-      } else if (window.currentCard === 2) {
-        previousBtnElement.style.opacity = 0.3;
-        window.currentCard -= 1;
-      }
-      else {
-        window.currentCard -= 1;
+    // Check that the click wasn't on the buttons. If it isn't, then close the outline section.
+      if (!previousBtnElement.contains(event.target) && !nextBtnElement.contains(event.target)){
+        photoOutliner.style.display = 'none';
+        captionDiv.innerText = '';
         nextBtnElement.style.opacity = 1;
-      }
-      const details = await updatePhotoDetails(window.currentCard);
-      photoDiv.style.backgroundImage = `url("${details.url}")`;
-      captionDiv.innerText = details.caption;
-      scaleDimensionsFor(photoDiv);
-  }
-  else if (nextBtnElement.contains(event.target)){
-    
-      if (nextBtnElement.style.opacity === '0.3') {
-        window.currentCard === window.currentCard;
-      } else {
-        window.currentCard += 1;
+        previousBtnElement.style.opacity = 1;
       }
 
-      const details = await updatePhotoDetails(window.currentCard);
-      photoDiv.style.backgroundImage = `url("${details.url}")`;
-      previousBtnElement.style.opacity = 1;
-      captionDiv.innerText = details.caption;
-      scaleDimensionsFor(photoDiv);
+      if (previousBtnElement.contains(event.target)) {
 
-      if (details.length === currentCard){
-        nextBtnElement.style.opacity = '0.3';
-      }  
+          if (window.currentCard === 1) {
+            window.currentCard = window.currentCard;
+          } else if (window.currentCard === 2) {
+            previousBtnElement.style.opacity = 0.3;
+            window.currentCard -= 1;
+          }
+          else {
+            window.currentCard -= 1;
+            nextBtnElement.style.opacity = 1;
+          }
+          const details = await updatePhotoDetails(window.currentCard);
+          photoDiv.style.backgroundImage = `url("${details.url}")`;
+          captionDiv.innerText = details.caption;
+          scaleDimensionsFor(photoDiv);
+      }
+      else if (nextBtnElement.contains(event.target)){
+        
+          if (nextBtnElement.style.opacity === '0.3') {
+            window.currentCard === window.currentCard;
+          } else {
+            window.currentCard += 1;
+          }
 
-  }
-});
+          const details = await updatePhotoDetails(window.currentCard);
+          photoDiv.style.backgroundImage = `url("${details.url}")`;
+          previousBtnElement.style.opacity = 1;
+          captionDiv.innerText = details.caption;
+          scaleDimensionsFor(photoDiv);
 
+          if (details.length === currentCard){
+            nextBtnElement.style.opacity = '0.3';
+          }  
 
+      }
+    });
 
 
 async function updatePhotoDetails (num) {

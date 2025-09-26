@@ -34,25 +34,25 @@
 
 /* *********SWITCH HANDLERS*********** */
 
-/* Parties Category styles */
-.parties-card-one{
-   background-image: url("../images/carousel images/parties-pc/A11.jpg");
+/* Event Category styles */
+.event-card-one{
+   background-image: url("../images/carousel images/event/A11.jpg");
    background-repeat: no-repeat; 
   background-position: center;   
   background-size: cover;
 }
 
 
-.parties-card-two{
-  background-image: url("../images/carousel images/parties-pc/A12.jpg");
+.event-card-two{
+  background-image: url("../images/carousel images/event/A12.jpg");
   background-repeat: no-repeat; 
   background-position: center;   
   background-size: cover;
 
 }
 
-.parties-card-three{
- background-image: url("../images/carousel images/parties-pc/A13.jpg");
+.event-card-three{
+ background-image: url("../images/carousel images/event/A13.jpg");
 background-repeat: no-repeat;  
 background-position: center;  
 background-size: cover;
@@ -61,327 +61,327 @@ background-size: cover;
    
 }
 
-.parties-card-four{
-background-image: url("../images/carousel images/parties-pc/A14.jpg");
+.event-card-four{
+background-image: url("../images/carousel images/event/A14.jpg");
 background-repeat: no-repeat;  
 background-position: center;  
 background-size: cover;
 }
 
-.parties-card-five{
-background-image: url("../images/carousel images/parties-pc/A15.jpg");
+.event-card-five{
+background-image: url("../images/carousel images/event/A15.jpg");
 background-repeat: no-repeat;  
 background-position: center;  
 background-size: cover;
 }
 
-.parties-card-six{
-   background-image: url("../images/carousel images/parties-pc/A16.jpg");
+.event-card-six{
+   background-image: url("../images/carousel images/event/A16.jpg");
 background-repeat: no-repeat;  
 background-position: center;  
 background-size: cover;
 }
 
-.parties-card-seven{
-  background-image: url("../images/carousel images/parties-pc/A17.jpg");
+.event-card-seven{
+  background-image: url("../images/carousel images/event/A17.jpg");
 background-repeat: no-repeat;  
 background-position: center;  
 background-size: cover;
 
 }
 
-.parties-card-eight{
-background-image: url("../images/carousel images/parties-pc/A18.jpg");
+.event-card-eight{
+background-image: url("../images/carousel images/event/A18.jpg");
 background-repeat: no-repeat;  
 background-position: center;  
 background-size: cover;
 }
 
-.parties-card-nine{
+.event-card-nine{
 
-  background-image: url("../images/carousel images/parties-pc/A19.jpg");
+  background-image: url("../images/carousel images/event/A19.jpg");
   background-repeat: no-repeat;  
   background-position: center;  
   background-size: cover; 
 }
 
-.parties-card-ten{
-background-image: url("../images/carousel images/parties-pc/A20.jpg");
+.event-card-ten{
+background-image: url("../images/carousel images/event/A20.jpg");
 background-repeat: no-repeat;  
 background-position: center;  
 background-size: cover;
  
 }
 
-.parties-card-eleven{
-  background-image: url("../images/carousel images/parties-pc/A21.jpg");
+.event-card-eleven{
+  background-image: url("../images/carousel images/event/A21.jpg");
   background-repeat: no-repeat;  
   background-position: center;  
   background-size: cover;
   
 }
 
-.parties-card-twelve{
-   background-image: url("../images/carousel images/parties-pc/A22.jpg");
+.event-card-twelve{
+   background-image: url("../images/carousel images/event/A22.jpg");
 background-repeat: no-repeat;  
 background-position: center;  
 background-size: cover;
 }
 
-.parties-card-thirteen{
-   background-image: url("../images/carousel images/parties-pc/A23.jpg");
+.event-card-thirteen{
+   background-image: url("../images/carousel images/event/A23.jpg");
 background-repeat: no-repeat;  
 background-position: center;  
 background-size: cover;
    
 }
 
-.parties-card-fourteen{
-  background-image: url("../images/carousel images/parties-pc/A24.jpg");
+.event-card-fourteen{
+  background-image: url("../images/carousel images/event/A24.jpg");
   background-repeat: no-repeat;  
   background-position: center;  
   background-size: cover;
 }
 
-.parties-card-fifteen{
-background-image: url("../images/carousel images/parties-pc/A25.jpg");
+.event-card-fifteen{
+background-image: url("../images/carousel images/event/A25.jpg");
 background-repeat: no-repeat;  
 background-position: center;  
 background-size: cover;
 }
 
 
-/* Jobs Category styles */
+/* Lifestyle Category styles */
 
-.jobs-card-one{
+.lifestyle-card-one{
   transform: translateX(100%);
-   background-image: url("../images/carousel images/lifestyle-pc/-1486412983.jpg");
+   background-image: url("../images/carousel images/lifestyle/-1486412983.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; 
 }
 
-.jobs-card-two{
+.lifestyle-card-two{
   transform: translateY(-160%);
-  background-image: url("../images/carousel images/lifestyle-pc/-702603178.jpg");
+  background-image: url("../images/carousel images/lifestyle/-702603178.jpg");
   background-repeat: no-repeat; 
   background-position: center;   
   background-size: cover;
 
 }
 
-.jobs-card-three{
+.lifestyle-card-three{
   transform: translateY(-160%);
- background-image: url("../images/carousel images/lifestyle-pc/A7.jpg");
+ background-image: url("../images/carousel images/lifestyle/A7.jpg");
 background-repeat: no-repeat;  
 background-position: center;  
 background-size: cover;  
    
 }
 
-.jobs-card-four{
+.lifestyle-card-four{
   display: none;
 }
 
-.jobs-card-five{
+.lifestyle-card-five{
   position: relative;
   bottom: -37.6%;
-background-image: url("../images/carousel images/lifestyle-pc/A4.jpg");
+background-image: url("../images/carousel images/lifestyle/A4.jpg");
 background-repeat: no-repeat;  
 background-position: center;  
 background-size: cover;
 }
 
-.jobs-card-six{
+.lifestyle-card-six{
   position: relative;
   bottom: -37.6%;
-   background-image: url("../images/carousel images/lifestyle-pc/A10.jpg");
+   background-image: url("../images/carousel images/lifestyle/A10.jpg");
 background-repeat: no-repeat;  
 background-position: center;  
 background-size: cover;
 }
 
-.jobs-card-seven{
+.lifestyle-card-seven{
  transform: translateX(-100%);
   
-  background-image: url("../images/carousel images/lifestyle-pc/A2.jpg");
+  background-image: url("../images/carousel images/lifestyle/A2.jpg");
 background-repeat: no-repeat;  
 background-position: center;  
 background-size: cover;
 
 }
 
-.jobs-card-eight{
+.lifestyle-card-eight{
   display: none;
 }
 
-.jobs-card-nine{
+.lifestyle-card-nine{
   position: relative;
   top: 22.7%;
-  background-image: url("../images/carousel images/lifestyle-pc/-1231774395.jpg");
+  background-image: url("../images/carousel images/lifestyle/-1231774395.jpg");
   background-repeat: no-repeat;  
   background-position: center;  
   background-size: cover; 
 }
 
-.jobs-card-ten{
+.lifestyle-card-ten{
   display: none;
  
 }
 
-.jobs-card-eleven{
+.lifestyle-card-eleven{
   position: relative;
   left: 100%;
-  background-image: url("../images/carousel images/lifestyle-pc/1888393390.jpg");
+  background-image: url("../images/carousel images/lifestyle/1888393390.jpg");
   background-repeat: no-repeat;  
   background-position: center;  
   background-size: cover;
   
 }
 
-.jobs-card-twelve{
+.lifestyle-card-twelve{
   position: relative;
   top: -17.5%;
-   background-image: url("../images/carousel images/lifestyle-pc/A5.jpg");
+   background-image: url("../images/carousel images/lifestyle/A5.jpg");
 background-repeat: no-repeat;  
 background-position: center;  
 background-size: cover;
 }
 
-.jobs-card-thirteen{
+.lifestyle-card-thirteen{
   position: relative;
   left: -100%;
-   background-image: url("../images/carousel images/lifestyle-pc/A9.jpg");
+   background-image: url("../images/carousel images/lifestyle/A9.jpg");
 background-repeat: no-repeat;  
 background-position: center;  
 background-size: cover;
    
 }
 
-.jobs-card-fourteen{
+.lifestyle-card-fourteen{
   position: relative;
   bottom: 23.84%;
-  background-image: url("../images/carousel images/lifestyle-pc/1716050292.jpg");
+  background-image: url("../images/carousel images/lifestyle/1716050292.jpg");
   background-repeat: no-repeat;  
   background-position: center;  
   background-size: cover;
 }
 
-.jobs-card-fifteen{
+.lifestyle-card-fifteen{
 display: none;
 }
 
 
-/***************** Personal Photos Category********** */
+/***************** Portrait Photos Category********** */
 
-.personal-card-one{
+.portrait-card-one{
   position: relative;
   bottom: -27.9%;
-  background-image: url("../images/carousel images/portrait-pc/A13.jpg");
+  background-image: url("../images/carousel images/portrait/A13.jpg");
 background-repeat: no-repeat;  
 background-position: center;  
 background-size: cover;
 }
 
-.personal-card-two{
+.portrait-card-two{
   position: relative;
   top: -44.4%;
-    background-image: url("../images/carousel images/portrait-pc/AD.jpg");
+    background-image: url("../images/carousel images/portrait/AD.jpg");
 background-repeat: no-repeat;  
 background-position: center;  
 background-size: cover;
 }
 
-.personal-card-three{
+.portrait-card-three{
   position: relative;
   bottom: 72.2%;
   right: -100%;
-  background-image: url("../images/carousel images/portrait-pc/AA.jpg");
+  background-image: url("../images/carousel images/portrait/AA.jpg");
 background-repeat: no-repeat;  
 background-position: center;  
 background-size: cover;
 }
 
-.personal-card-four{
+.portrait-card-four{
   display: none;
 }
 
-.personal-card-five{
+.portrait-card-five{
   position: relative;
   top: 27.8%;
-  background-image: url("../images/carousel images/portrait-pc/AB.jpg");
+  background-image: url("../images/carousel images/portrait/AB.jpg");
 background-repeat: no-repeat;  
 background-position: center;  
 background-size: cover;
 }
 
-.personal-card-six{
+.portrait-card-six{
   position: relative;
   top: 44.5%;
   left: -100%;
-  background-image: url("../images/carousel images/portrait-pc/AC.jpg");
+  background-image: url("../images/carousel images/portrait/AC.jpg");
 background-repeat: no-repeat;  
 background-position: center;  
 background-size: cover;
 }
 
-.personal-card-seven{
-  background-image: url("../images/carousel images/portrait-pc/A16.jpg");
+.portrait-card-seven{
+  background-image: url("../images/carousel images/portrait/A16.jpg");
 background-repeat: no-repeat;  
 background-position: center;  
 background-size: cover;
 }
 
-.personal-card-eight{
+.portrait-card-eight{
   display: none;
 }
 
-.personal-card-nine{
+.portrait-card-nine{
   display: none;
 }
 
-.personal-card-ten{
-  background-image: url("../images/carousel images/portrait-pc/AF.jpg");
+.portrait-card-ten{
+  background-image: url("../images/carousel images/portrait/AF.jpg");
   
 }
 
-.personal-card-eleven{
+.portrait-card-eleven{
   position: relative;
   top: 27.7%;
-  background-image: url("../images/carousel images/portrait-pc/A19.jpg");
+  background-image: url("../images/carousel images/portrait/A19.jpg");
 background-repeat: no-repeat;  
 background-position: center;  
 background-size: cover;
 }
 
-.personal-card-twelve{
+.portrait-card-twelve{
   position: relative;
   top: -44.5%;
-  background-image: url("../images/carousel images/portrait-pc/AG.jpg");
+  background-image: url("../images/carousel images/portrait/AG.jpg");
 background-repeat: no-repeat;  
 background-position: center;  
 background-size: cover;
 }
 
-.personal-card-thirteen{
+.portrait-card-thirteen{
   position: relative;
   top: 44.4%;
-  background-image: url("../images/carousel images/portrait-pc/AE.jpg");
+  background-image: url("../images/carousel images/portrait/AE.jpg");
 background-repeat: no-repeat;  
 background-position: center;  
 background-size: cover;
 }
 
-.personal-card-fourteen{
+.portrait-card-fourteen{
   position: relative;
   top: -27.8%;
-  background-image: url("../images/carousel images/portrait-pc/A20.jpg");
+  background-image: url("../images/carousel images/portrait/A20.jpg");
 background-repeat: no-repeat;  
 background-position: center;  
 background-size: cover;
 }
 
-.personal-card-fifteen{
+.portrait-card-fifteen{
 display: none;
 }
 
