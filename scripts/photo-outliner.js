@@ -8,9 +8,11 @@ const captionDiv = document.getElementById('photo-caption');
     photoOutliner.addEventListener('click', async (event) => {
 
     // Check that the click wasn't on the buttons. If it isn't, then close the outline section.
-      if (!previousBtnElement.contains(event.target) && !nextBtnElement.contains(event.target)){
+      if (!previousBtnElement.contains(event.target) && !nextBtnElement.contains(event.target) && !photoDiv.contains(event.target)){
         photoOutliner.style.display = 'none';
         captionDiv.innerText = '';
+        photoDiv.style.width = '0px';
+        photoDiv.style.height = '0px';
         nextBtnElement.style.opacity = 1;
         previousBtnElement.style.opacity = 1;
       }
