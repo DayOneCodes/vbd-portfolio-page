@@ -2,7 +2,7 @@
   height: 100vh;
   width: 100vw;
   position: fixed;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0,0,0,0.82);
   z-index: 10;
   transition: all 0.3s ease-in-out;
 }
@@ -15,10 +15,10 @@
   opacity: 1;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 3%;
-  gap: auto; /* Verify this style */
+  gap: 50px; 
 }
 
 #photo-div{
@@ -35,22 +35,30 @@
 
 #photo-caption{
   font-family: "Playfair Display", serif;
- max-width: 100%;
+ max-width: 60%;
  color: white;
  display: flex;
  justify-content: center;
  align-items: center;
+ text-align: center;
 }
 
 #photo-outline>#photo-outline-container button{
   font-family: "Playfair Display", serif;
   border: none;
-  padding: 2%;
+  padding: 32px;
   border-radius: 150%;
   cursor: pointer;
   color: #333;
   font-weight: 600;
   background-color: white;
+}
+
+#photo-details-container{
+  justify-content: center;
+  align-items: center;
+  max-width: 540px;
+  min-width: 540px;
 }
 
 .outline-buttons{

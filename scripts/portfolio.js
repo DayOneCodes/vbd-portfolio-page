@@ -20,8 +20,7 @@ const photoDivElement = document.getElementById('photo-div');
 const captionDiv = document.getElementById('photo-caption');
 const prevOutlineButton = document.getElementById('previous-button');
 const nextOutlineButton = document.getElementById('next-button');
-
-
+const navListItems = document.querySelectorAll('.nav-list>li>a')
 
 
 //Default states
@@ -34,16 +33,39 @@ if (window.view === 'desktop'){
 }
 
 
-
 //Animate header color on scroll
 document.addEventListener('scroll', () => {
  useFunction.animateOnScroll(headerElement, 'header-switch');
+
+ //Animate navs on scroll
+ navListItems.forEach((navs)=>{
+  if (window.scrollY >= 40){
+    navs.style.color = 'white';
+    navListItems[3].style.borderColor = 'white'
+
+    navs.addEventListener('mouseenter', () => {
+      window.getComputedStyle(navs).borderColor = 'white';
+    })
+  
+//Return to default color on scroll back up
+    navs.addEventListener('mouseleave', () => {
+      window.getComputedStyle(navs).borderColor = `var(--primary-color)`
+    })
+  }
+  else {
+    navs.style.color = 'black';
+    navs.style.borderColor = `var(--primary-color)`
+    navListItems[3].style.borderColor = 'var(--primary-color)'
+
+  }
+ });
+
 
 /* For Mobile */
 //Toggle hamburger menu color for proper contrast
 mobile.hamburgerMenuDivs.forEach((divs) => {
   useFunction.animateOnScroll(divs, 'hamburger-white')
-})
+});
 
 /* End of mobile script*/
 });
@@ -95,11 +117,9 @@ document.body.addEventListener('click', (event) => {
 
   //If the click was on a card..; 
   if (clickedLong || clickedShort) {
-    console.log('Clicked confirmation successful: ON CARD')
 
   //Change the image of the outline section accordingly
   photoDivElement.style.backgroundImage = `${clickedLong ?  window.getComputedStyle(clickedLong).backgroundImage :  window.getComputedStyle(clickedShort).backgroundImage}`
-  console.log('Image changed accordingly')
 
   //Take the image from the outlne section just changed and get its length and width properties
   const currentImageURL = photoDivElement.style.backgroundImage.slice(5, -2);
@@ -175,7 +195,6 @@ document.body.addEventListener('click', (event) => {
 
   //update the current card being viewed/oulined
           window.currentCard = cardDetails[1].cardNumber;
-          console.log(`card successfully changed to: ${window.currentCard}`)
         }
         })
    })
@@ -186,15 +205,14 @@ document.body.addEventListener('click', (event) => {
     if  (photoOutliner.style.display === 'none') {
        photoOutliner.style.display = 'flex'
     };
-    console.log('Outline Section displayed successfully')
   }
 });
 
 
-
-
-
-
+//This listens for the specified Query measurement only, it should listen for everything
+mobileQuery.addEventListener('change', () => {
+  photoOutliner.style.display = 'none';
+})
 
 
 

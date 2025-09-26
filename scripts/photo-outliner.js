@@ -6,9 +6,6 @@ const captionDiv = document.getElementById('photo-caption');
 
 
     photoOutliner.addEventListener('click', async (event) => {
-      console.log('Click confirmed successfully: ON OUTLINE SECTION')
-
-      console.log(event.target)
 
     // Check that the click wasn't on the buttons. If it isn't, then close the outline section.
       if (!previousBtnElement.contains(event.target) && !nextBtnElement.contains(event.target)){
