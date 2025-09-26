@@ -7,13 +7,7 @@ const mobileNavElement = document.querySelector('.mobile-nav')
 
  mobileQuery.addEventListener('change', () => {
   mobileNavDisplay ();
- })
-
-// FUNCTIONS
-function createElement (elementName) {
-  return document.createElement(elementName);
-}
-
+ });
 
 function mobileNavDisplay () {
    if (window.mobileQuery.matches){
@@ -22,4 +16,4 @@ function mobileNavDisplay () {
  else {
   mobileNavElement.style.display = 'none'
  }
-}
+};

@@ -106,7 +106,7 @@ export function scaleDimensionsFor (div) {
           let outlineWidth = naturalWidth / 2.5;
           let outlineHeight = naturalHeight / 2.5;
 
-          if (outlineWidth > window.innerWidth) {
+          if (view === 'mobile') {
             outlineHeight = naturalHeight / 3.5;
             outlineWidth = naturalWidth / 3.5
           }
@@ -122,7 +122,7 @@ export function scaleDimensionsFor (div) {
           let outlineWidth = naturalWidth / 2;
           let outlineHeight = naturalHeight / 2;
 
-          if (outlineWidth > window.innerWidth) {
+          if (view === 'mobile') {
             outlineHeight = naturalHeight / 3;
             outlineWidth = naturalWidth / 3;
           }

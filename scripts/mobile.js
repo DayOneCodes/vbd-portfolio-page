@@ -13,7 +13,7 @@ hamburgerMenuElement.addEventListener('click', () => {
 
 //...Display the navbar
   mobileNavElement.classList.toggle('mobile-nav-display')
-})
+});
 
 
 

@@ -24,6 +24,7 @@ const navListItems = document.querySelectorAll('.nav-list>li>a')
 
 
 //Default states
+useFunction.changeView();
 partiesCategory.classList.add('text-bold-purple');
 useFunction.animateOnScroll(headerElement, 'header-switch');
 switchTo.eventCategory();
@@ -36,29 +37,6 @@ if (window.view === 'desktop'){
 //Animate header color on scroll
 document.addEventListener('scroll', () => {
  useFunction.animateOnScroll(headerElement, 'header-switch');
-
- //Animate navs on scroll
- navListItems.forEach((navs)=>{
-  if (window.scrollY >= 40){
-    navs.style.color = 'white';
-    navListItems[3].style.borderColor = 'white'
-
-    navs.addEventListener('mouseenter', () => {
-      window.getComputedStyle(navs).borderColor = 'white';
-    })
-  
-//Return to default color on scroll back up
-    navs.addEventListener('mouseleave', () => {
-      window.getComputedStyle(navs).borderColor = `var(--primary-color)`
-    })
-  }
-  else {
-    navs.style.color = 'black';
-    navs.style.borderColor = `var(--primary-color)`
-    navListItems[3].style.borderColor = 'var(--primary-color)'
-
-  }
- });
 
 
 /* For Mobile */
@@ -136,7 +114,7 @@ document.body.addEventListener('click', (event) => {
       let outlineWidth = naturalWidth / 2.5;
         let outlineHeight = naturalHeight / 2.5;
 
-      if (outlineWidth > window.innerWidth){
+      if (view === 'mobile'){
          outlineHeight = naturalHeight / 3.5;
          outlineWidth = naturalWidth / 3.5;
       } 
@@ -154,7 +132,7 @@ document.body.addEventListener('click', (event) => {
       let outlineWidth = naturalWidth / 2;
       let outlineHeight = naturalHeight / 2;
 
-       if (outlineWidth > window.innerWidth){
+       if (view === 'mobile'){
          outlineHeight = naturalHeight / 3;
          outlineWidth = naturalWidth / 3;
       } 
@@ -211,6 +189,7 @@ document.body.addEventListener('click', (event) => {
 
 //This listens for the specified Query measurement only, it should listen for everything
 mobileQuery.addEventListener('change', () => {
+  useFunction.changeView()
   photoOutliner.style.display = 'none';
 })
 

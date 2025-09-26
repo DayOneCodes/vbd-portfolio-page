@@ -37,3 +37,13 @@ export async function fetchData (url) {
       throw error;
   }
 }
+
+//Monitor viewing device/screen size
+export function changeView () {
+  if (mobileQuery.matches) {
+    window.view = 'mobile'
+  }
+  else {
+    window.view = 'desktop'
+  }
+} 
