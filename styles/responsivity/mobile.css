@@ -5,7 +5,7 @@
 }
 
   .hero{
-  display: flex;
+   display: flex;
  flex-direction: column;
 }
 
@@ -88,7 +88,20 @@ header{
 
 .container .title ul li{
   /* font-size: 17px; */
-  font-size: 105%;
+  font-size: 1rem;
+}
+
+/* cAROUSEL */
+
+.card-long{
+  height: 0px;
+  min-height: 250px;
+  
+}
+
+.card-short{
+  height: 0px;
+  min-height: 200px;
 }
 
 /* PHOTO OUTLINER */
@@ -126,28 +139,95 @@ header{
 /* CAROUSEL */
 /* Event cards */
 .event-card-thirteen{
-  transform: translateY(-60%);
+  transform: translateY(-25%);
 }
 
 .event-card-fourteen{
-  transform: translateY(-38%);
+  transform: translateY(-20%);
 }
 
 .event-card-fifteen{
-  transform: translateY(-38%);
+  transform: translateY(-20%);
 }
 
 /* Lifestyle cards */
+.lifestyle-card-two{
+  transform: translateY(-125%);
+}
+
+.lifestyle-card-three{
+  transform: translateY(-125%);
+}
+
+.lifestyle-card-five{
+  transform: translateY(2%);
+}
+
+.lifestyle-card-nine{
+  transform: translateY(13%);
+}
+
+.lifestyle-card-twelve{
+  transform: translateY(24.3%);
+}
 
 .lifestyle-card-fourteen{
   transform: translateY(-16%);
 }
 
 .lifestyle-card-eleven{
+  transform: translateY(-3%);
+}
+
+/* potrait cards */
+
+.portrait-card-two{
+  transform: translateY(9.7%);
+}
+
+.portrait-card-one{
+  transform: translateY(-0.3%);
+}
+
+.portrait-card-six{
+  transform: translateY(-30%);
+}
+
+.portrait-card-seven{
+  transform: translateY(-7.7%);
+}
+
+.portrait-card-ten{
+  transform: translateY(-10.4%);
+}
+
+.portrait-card-twelve{
+  transform: translateY(9.2%);
+}
+
+.portrait-card-fourteen{
   transform: translateY(-16%);
 }
 
+.portrait-card-thirteen{
+  transform: translateY(-30%);
+}
+
+.portrait-card-eleven{
+  transform: translateY(-1%);
+}
 /* Retro cards */
+.retro-card-four{
+  /* transform: translateY(-320%) translateX(100%);
+}
+
+.retro-card-three{
+  transform: translateY(-320%) translateX(100%);
+}
+
+.retro-card-eight{
+  transform: translateY(-320%) translateX(100%);
+} */
 
 .retro-card-twelve{
   transform: translateY(-320%) translateX(100%);
