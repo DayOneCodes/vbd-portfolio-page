@@ -95,13 +95,16 @@ header{
 
 .card-long{
   height: 0px;
-  min-height: 250px;
+  min-height: 265px;
+  min-width: 115%;
   
 }
 
 .card-short{
   height: 0px;
-  min-height: 200px;
+  min-height: 215px;
+  min-width: 115%;
+
 }
 
 /* PHOTO OUTLINER */
@@ -138,6 +141,10 @@ header{
 
 /* CAROUSEL */
 /* Event cards */
+.event-card-one, .event-card-two, .event-card-three,.event-card-four,.event-card-nine,.event-card-ten,.event-card-eleven,.event-card-twelve{
+  transform: translateX(-13%);
+}
+
 .event-card-thirteen{
   transform: translateY(-25%);
 }
