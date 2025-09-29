@@ -29,9 +29,6 @@ partiesCategory.classList.add('text-bold-purple');
 useFunction.animateOnScroll(headerElement, 'header-switch');
 switchTo.eventCategory();
 window.currentCategory = 'event';
-if (window.view === 'desktop'){
-  mobile.mobileNavElement.style.display = 'none';
-}
 
 
 //Animate header color on scroll

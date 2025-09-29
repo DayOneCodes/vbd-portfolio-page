@@ -157,6 +157,12 @@ header{
   transform: translateY(-38%) translateX(100%);
 }
 
+/* FOOTER */
+
+footer{
+  flex-direction: column;
+}
+
 /* JS TOGGLES */
 
 .hamburger-white{
