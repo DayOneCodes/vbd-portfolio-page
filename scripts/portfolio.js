@@ -141,7 +141,7 @@ document.body.addEventListener('click', (event) => {
 
 
   //Fetch photo details from public file using current category
-  useFunction.fetchData(`../public/${window.currentCategory}-photos-details.json`)
+  useFunction.fetchData(`../data/${window.currentCategory}-photos-details.json`)
    .then((data) => {
      const dataArray = Object.entries(data);
      const  cardNumberClicked = clickedLong ? clickedLong.dataset.cardNumber: clickedShort.dataset.cardNumber; 

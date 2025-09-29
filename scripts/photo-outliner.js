@@ -58,7 +58,7 @@ const captionDiv = document.getElementById('photo-caption');
 
 async function updatePhotoDetails (num) {
     try {
-      const response = await fetch (`../public/${window.currentCategory}-photos-details.json`)
+      const response = await fetch (`../data/${window.currentCategory}-photos-details.json`)
       if (!response.ok){
             throw new Error (`${response.status}`);
           }
