@@ -2,15 +2,36 @@
 :root{
   --primary-color: #172727;
   --secondary-color: #F2EDFA;
+  --h1-font: 1.8rem;
+  --h2-font: 1.5rem;
+  --h3-font: 1.3rem;
+  --body-p-font: 0.95rem;
+  --menu-font: 0.9rem;
+  --nav-links-font: 1rem;
+  --footer-heading-font: 1.1rem;
+  --brand-name-font: 1.2rem;
+  --copyright-font: 0.75rem;
+  --footer-p-font: 0.85rem;
+  --header-padding: 0.8rem 1rem;
+  --section-padding: 2rem 0;
+  --footer-padding: 2rem 1rem;
+  --header-height: 60px;
+  --menu-spacing: 0.5rem;
 }
 
   .hero{
-   display: flex;
- flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
 }
 
 header{
- padding: 30px 35px;
+ padding: var(--header-padding);
+ height: var(--header-height);
+}
+
+.brand-name{
+  font-size: var(--brand-name-font);
 }
 
 .nav-list{
@@ -45,7 +66,7 @@ header{
     display: flex;
     position: fixed;
     color: #333;
-    top: 75px;
+    top: var(--header-height);
     right: -1px;
     left: 50%;
     bottom: 0;
@@ -81,14 +102,18 @@ header{
     text-decoration: none;
     color: var(--primary-color);
     cursor: pointer;
+    font-size: var(--nav-links-font);
     }
 
+.container{}
 
-/* HERO */
+.container>.title>h1{
+ font-size: var(--h1-font);
+}
 
 .container .title ul li{
-  /* font-size: 17px; */
-  font-size: 1rem;
+ font-size: var(--menu-font);
+ margin: var(--menu-spacing);
 }
 
 /* cAROUSEL */
@@ -131,6 +156,7 @@ header{
 
 #photo-caption{
  max-width: 84%;
+ font-size: var(--body-p-font);
 }
 
 .outline-buttons{
@@ -145,37 +171,47 @@ header{
   transform: translateX(-13%);
 }
 
+
+
 .event-card-thirteen{
   transform: translateY(-25%);
 }
 
 .event-card-fourteen{
-  transform: translateY(-20%);
+  transform: translateY(-20.3%);
 }
 
 .event-card-fifteen{
-  transform: translateY(-20%);
+  transform: translateY(-20.3%);
 }
 
 /* Lifestyle cards */
+.lifestyle-card-one{
+  transform: translateX(87.2%) translateY(-1.4%);
+}
+
 .lifestyle-card-two{
-  transform: translateY(-125%);
+  transform: translateY(-125%) translateX(-13%);
 }
 
 .lifestyle-card-three{
-  transform: translateY(-125%);
+  transform: translateY(-125%) translateX(-12.7%);
 }
 
-.lifestyle-card-five{
-  transform: translateY(2%);
+.lifestyle-card-seven{
+  transform: translateY(-1.4%) translateX(-99.7%);
 }
 
 .lifestyle-card-nine{
-  transform: translateY(13%);
+  transform: translateX(-12.9%) translateY(12.7%);
 }
 
 .lifestyle-card-twelve{
-  transform: translateY(24.3%);
+  transform: translateX(-12.9%) translateY(24.3%);
+}
+
+.lifestyle-card-thirteen{
+  transform: translateX(-12.9%) translateY(-1.8%);
 }
 
 .lifestyle-card-fourteen{
@@ -189,27 +225,27 @@ header{
 /* potrait cards */
 
 .portrait-card-two{
-  transform: translateY(9.7%);
+  transform: translateY(9.7%) translateX(-12.9%);
 }
 
 .portrait-card-one{
-  transform: translateY(-0.3%);
+  transform: translateY(-0.5%) translateX(-12.9%);
 }
 
 .portrait-card-six{
-  transform: translateY(-30%);
+  transform: translateY(-31.5%) translateX(-12.9%);
 }
 
 .portrait-card-seven{
-  transform: translateY(-7.7%);
+  transform: translateY(-8%) ;
 }
 
 .portrait-card-ten{
-  transform: translateY(-10.4%);
+  transform: translateY(-11%) translateX(-12.9%);
 }
 
 .portrait-card-twelve{
-  transform: translateY(9.2%);
+  transform: translateY(9.2%) translateX(-12.9%);
 }
 
 .portrait-card-fourteen{
@@ -221,33 +257,60 @@ header{
 }
 
 .portrait-card-eleven{
-  transform: translateY(-1%);
+  transform: translateY(-1%) translateX(-12.9%);
 }
 /* Retro cards */
-/* .retro-card-four{ */
-  /* transform: translateY(-320%) translateX(100%);
+.retro-card-two{
+  transform: translateX(87%);
+  z-index: 7;
 }
 
 .retro-card-three{
-  transform: translateY(-320%) translateX(100%);
+  transform: translateY(23.5%) translateX(-13%);
+}
+
+.retro-card-four{
+  transform: translateY(-162.3%) translateX(-13%);
 }
 
 .retro-card-eight{
-  transform: translateY(-320%) translateX(100%);
-} */
+  transform: translateX(-100%) translateY(23.8%);
+}
 
 .retro-card-twelve{
-  transform: translateY(-320%) translateX(100%);
+  transform: translateY(-246.5%) translateX(86.8%);
+}
+
+.retro-card-ten{
+  transform: translateX(-13%) translateY(223%);
 }
 
 .retro-card-eleven{
-  transform: translateY(-38%) translateX(100%);
-}
+  transform: translateY(-19%) translateX(87%);
+} 
 
 /* FOOTER */
 
 footer{
   flex-direction: column;
+  padding: var(--footer-padding);
+}
+
+.footer-card>h3{
+  font-size: var(--footer-heading-font);
+}
+
+.get-in-touch-card>div>p{
+  font-size: var(--footer-p-font);
+}
+
+.get-in-touch-card>div>a{
+  font-size: var(--footer-p-font);
+  cursor: pointer;
+}
+
+.copyright-text{
+  font-size: var(--copyright-font);
 }
 
 /* JS TOGGLES */
