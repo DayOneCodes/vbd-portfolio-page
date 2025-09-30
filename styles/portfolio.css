@@ -143,6 +143,7 @@ footer{
 }
 
 footer>p{
+  font-family: "Playfair Display", serif;
   color: var(--secondary-color);
   flex: 1;
 }
@@ -174,6 +175,10 @@ footer>p{
 
 .get-in-touch-card>div>p, .my-social-links>div{
   text-align: center;
+}
+
+.get-in-touch-card>div>p, .get-in-touch-card>div>a{
+  font-family: "Playfair Display", serif;
 }
 
 .my-social-links>div>a>i{

@@ -17,6 +17,8 @@
   --footer-padding: 2rem 1rem;
   --header-height: 60px;
   --menu-spacing: 0.5rem;
+  --header-margin-bottom: 1.5rem; 
+  --title-margin-bottom: 0.75rem;
 }
 
   .hero{
@@ -28,6 +30,7 @@
 header{
  padding: var(--header-padding);
  height: var(--header-height);
+ margin-bottom: var(--header-margin-bottom);
 }
 
 .brand-name{
@@ -105,10 +108,10 @@ header{
     font-size: var(--nav-links-font);
     }
 
-.container{}
-
 .container>.title>h1{
  font-size: var(--h1-font);
+ margin-bottom: var(--title-margin-bottom);
+
 }
 
 .container .title ul li{
